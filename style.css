@@ -19,7 +19,7 @@ margin-right: auto;
 
 p{
     margin-top: 8%;
-    font-size: 16px;
+    font-size: 1.3vw;
 }
 
 .cite {
@@ -32,7 +32,7 @@ p{
 }
 
 .contact {
-    font-size: 14px;
+    font-size: 1.1vw;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -56,12 +56,12 @@ padding-left: 60px;
 .nav {
 }
 .nav__counter {
-  font-size: 24px;
+  font-size: 2vw;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 .nav__counter__chapter {
-  font-size: 32px;
+  /* font-size: 5vw; */
   height: 0px;              /* moved the lines width*/
   overflow: hidden;
   /*opacity: 0;
@@ -69,7 +69,7 @@ padding-left: 60px;
   transition: height 3s ease-out, opacity 0.2s ease-out; */
 }
 .nav__title {
-  font-size: 32px;
+  /* font-size: 5vw; */
   font-weight: 300;
   margin-top: 1px;          /* moved the lines width*/
   width: 40px; /* moved the words right*/
@@ -80,7 +80,7 @@ padding-left: 60px;
   transition: height 0.3s ease-out, opacity 0.2s ease-out; */
 }
 .nav__body {
-  font-size: 18px;
+  /* font-size: 5vw; */
   overflow: hidden;
   /*opacity: 0;
   -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
@@ -126,20 +126,20 @@ padding-left: 60px;
   height: 300px;
 }
 .nav li.active .nav__counter {
-  font-size: 40px;   /* clicked on chapter number size */
+  font-size: 4vw;   /* clicked on chapter number size */
 }
 
 .nav li.active .nav__counter__chapter {
-    font-size: 20px;  /* chapter word size, clicked on */
+    font-size: 1.5vw;  /* chapter word size, clicked on */
     font-weight: bold;
 margin-bottom: 15px; /* distance above chapter number when clicked on */
   overflow: visible;
 }
 .nav li.active .nav__title {
-    width: 150px; /* chapter detail paragraph widths when clicked on */
-    margin-left: 35px;
+    width: 4vw; /* chapter detail paragraph widths when clicked on */
+    margin-left: 2vw;
   overflow: visible;
-    font-size: 20px;
+    font-size: 1.8vw;
 }
 
 
@@ -257,7 +257,7 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
     position: absolute;
     top: 110px;
     left: 16%;
-    font-size: 25px;
+    font-size:  1.9vw;
     font-family: "lato", sans-serif;
     text-align: center;
     color: #FFF;
@@ -340,7 +340,7 @@ left: 50%;
 .parallax__layer__1 { /* Moon */
   -webkit-transform: translateZ(-250px) scale(3.5);
           transform: translateZ(-250px) scale(3.5);
-    margin-left: 100%;
+    margin-left: 100vw;
     margin-top: -90%;
     border: 5px solid blue;
     max-width: 100%;
@@ -360,7 +360,7 @@ border: 5px solid blue;
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
         margin-top: -12%;
-            margin-left: 46%;
+            margin-left: 60vw;
 }
 
 .parallax__layer__4 { /* Water */
@@ -447,15 +447,15 @@ border: 5px solid blue;
 .introductionDivWords {
     position: absolute;
     top: 13%;
-    left: 10%;                   /* move words to the right */
-    width: 600px;
+    left: 5%;                   /* move words to the right */
     background-color: transparent;
-
+border: 5px solid pink;
+    max-width: 70%;
 }
 .introduction {
     margin-top: 3%;
     text-indent: 30px;
-    font-size: 18px;
+    font-size: 1.6vw;
     text-align: justify;
     font-family: 'Poiret One', cursive;
     color: #ebebeb;
@@ -464,7 +464,7 @@ border: 5px solid blue;
 /* Glowing Words *********/
 .locationsWords{
     margin-top: -2%;            /* move glow words up */
-    font-size: 40px;
+   font-size: 3vw;
     text-align: center;
     color: #ebebeb;
 }
@@ -538,14 +538,14 @@ border: 5px solid blue;
 }
 
 .titleBannerCity{
-    font-size: 60px;
+    font-size: 5vw;
     font-family: 'Homenaje', sans-serif;
     /*font-family: 'Courier Prime', monospace;*/
     /*margin-top: -10%;    Moves words in title up and down */
 }
 
 .titleBannerCityPart{
-    font-size: 30px;
+    font-size: 2.5vw;
     margin-top: -30px;
 }
 
@@ -765,7 +765,7 @@ border: 5px solid blue;
     background-color: #212121;
     max-height: 460px;
     overflow-y: auto;  
-    font-size: 20px;
+    /* font-size: 2vw */
     text-indent: 30px;
     text-align: justify;
     border: 3px solid black;
@@ -781,20 +781,20 @@ border: 5px solid blue;
 .step {
     text-indent: 0px;
 /* font-weight: bold; */
-    font-size: 30px;
+    font-size: 2.6vw;
     margin-left: 10px;
     
 }
 .smallDate {
     display: inline-block;
-    font-size: 17px;
+    font-size: 1.5vw;
     margin-left: 4%;
 }
 
 
 .scrollDownWords{
     margin-top: 2%;
-    font-size: 20px;
+    font-size: 1.8vw;
     text-shadow: -1px -1px 18px rgba(255,255,255,1);
     color: goldenrod;
 }
@@ -803,7 +803,7 @@ border: 5px solid blue;
 /* "Scroll Down" Glowing Words *********/
 .scrollWords{
     letter-spacing: 8px;
-    font-size: 22px;
+    font-size: 1.8vw;
     color: goldenrod;
     text-shadow: 0px 0px 15px rgba(218,165,32,100); /* makes the shadow really show */
     margin-top: -12px;
@@ -948,14 +948,14 @@ border: 5px solid blue;
 .theEndText { /* all the paragraphs and words */
     grid-column: 1;
     grid-row: 1;
-    font-size: 20px;
+    font-size: 1.5vw;
     line-height: 35px;
     padding: 7%;
 }
 
 .theEnd{ /* the literal words */
     margin-top: 7%;
-    font-size: 30px;
+    font-size: 2.5vw;
     text-align: center;
 }
 
