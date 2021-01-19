@@ -345,6 +345,8 @@ left: 50%;
           transform: translateZ(-200px) scale(3.1);
     margin-top: 40%;
     margin-left: 75%;
+    max-width: 100%;
+    display: block;
 }
 
 .parallax__layer__3 {  /* Lighthouse */
@@ -374,7 +376,7 @@ left: 50%;
           transform: translateZ(0px) scale(1);
     margin-left: 49%;
     margin-top: -62.5%;
-    width: 100%;
+    max-width: 100%;
 }
 
 
