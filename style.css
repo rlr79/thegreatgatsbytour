@@ -359,6 +359,7 @@ left: 50%;
           transform: translateZ(-100px) scale(2);
         margin-left: 62%;
         margin-top: 58%;
+    max-width: 100%;
 }
 
 .parallax__layer__5 { /* Pier */
