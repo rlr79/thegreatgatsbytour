@@ -322,7 +322,7 @@ left: 50%;
   top: 100%;
   left: 0;
   right: 0;
-  height: 900px;  /* what pushes down the top banner */
+  height: 75vw;  /* what pushes down the top banner */
 
 }
 
@@ -438,22 +438,25 @@ border: 5px solid blue;
 
 
 .introductionDivFrame {
-   position: relative;
-   top: 4%;
-   margin-left: 20%; /* move the frame */ 
+    position: relative;
+    top: 10vw;
+    margin-left: 20%; /* move the frame */ 
+    border: 5px solid orange;
+}
 
+.frame {
+    width: 65vw;
 }
 
 .introductionDivWords {
     position: absolute;
     top: 13%;
-    left: 5%;                   /* move words to the right */
+    left: 5vw;                   /* move words to the right */
     background-color: transparent;
 border: 5px solid pink;
     max-width: 70%;
 }
 .introduction {
-    margin-top: 3%;
     text-indent: 30px;
     font-size: 1.6vw;
     text-align: justify;
@@ -731,18 +734,19 @@ border: 5px solid pink;
   font-weight: 100;
   color: #fff;
   position: relative;   
+    border: 5px solid purple;
 }
 
 .sections{
     border: 5px solid red;
     display: inline-block;
-    margin-top: 47%;
+    margin-top: 72vw;    /* move the wections un and down under the parallax */
     width: 100%;
 }
 
 .grouping {
 /* border: 5px solid red; */
-    width: 1000px;
+    width: 90vw;
     top: 50%;
     padding-bottom: 5%;
     margin-top: 16%;
@@ -758,18 +762,19 @@ border: 5px solid pink;
     align-self: center;
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,1); 
     box-shadow: -1px 1px 50px 10px rgba(0,0,0,1);
+    max-width: 40vw;
 }
 
 .wordBox {
     align-self: center; /* makes wordbox adjust height */
     background-color: #212121;
-    max-height: 460px;
+    max-height: 35vw;
     overflow-y: auto;  
     /* font-size: 2vw */
     text-indent: 30px;
     text-align: justify;
     border: 3px solid black;
-    width: 35%;
+    max-width: 30vw;
     float: right;
     margin-left: 5%;  /* moves mapt */
     margin-right: 12%; /* moves word box groups from the right */
