@@ -9,22 +9,10 @@ body {
     overflow-x: hidden;
 }
 
-#ci-hero-11 .widget-wrap , #ci-hero-12 .widget-wrap {
-background-size: auto;
-background-attachment: fixed;
+@media only screen and (max-width: 768px){
+   background-size: 100% 100vh;
 }
 
-.widget-wrap {
-background-attachment: scroll;
-}
-
-@media (max-width: 767px) {
-#ci-hero-11 .widget-wrap , #ci-hero-12 .widget-wrap {
-
-    background-attachment: initial;
-
-}
-}
 
 
 
@@ -557,7 +545,9 @@ left: 50%;
 #titleBanner1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 120%;
+
+  background-size: cover;
+ transform: scale(1.1, 1.1);
 }
 
 #titleBanner1b {
