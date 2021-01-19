@@ -769,12 +769,12 @@ border: 5px solid pink;
     align-self: center; /* makes wordbox adjust height */
     background-color: #212121;
     max-height: 35vw;
+    max-width: 30vw;
     overflow-y: auto;  
     /* font-size: 2vw */
     text-indent: 30px;
     text-align: justify;
     border: 3px solid black;
-    max-width: 30vw;
     float: right;
     margin-left: 5%;  /* moves mapt */
     margin-right: 12%; /* moves word box groups from the right */
@@ -872,23 +872,25 @@ border: 5px solid pink;
 
 /* The Final Tour Step, Above the glowing paragraph *************/ 
 .finalGrouping {
-  max-height: 460px;
-  overflow-y: auto;  
-  margin-top: 16%;
-  display: flex;
-  justify-content: flex-end;
+    max-height: 460px;
+    overflow-y: auto;  
+    margin-top: 16%;
+    display: flex;
+    justify-content: flex-end;
+    width: 90vw;
+    /* float: right; */
 }
 
 
 
 .finalWordBox {
+        max-height: 35vw;
+    max-width: 30vw;
     text-indent: 30px;
     background-color: #212121;
-    max-height: 460px;
     overflow-y: auto;  
     font-size: 20px;
     border: 3px solid black;
-    width: 355px;
     margin-left: 5%;
     margin-right: 5%;
     padding: 2%;
@@ -924,8 +926,8 @@ border: 5px solid pink;
 .card-body {
     z-index: 2;
     display: grid;
-    width: 600px;
-    height: 400px;
+    width: 50vw;
+    height: 36vw;
     background-color: #18181b;
     text-indent: 30px;
     font-family: monospace;
@@ -937,11 +939,11 @@ border: 5px solid pink;
     position: absolute;
     top: 2;
     left: 2;
-    width: 600px;
-    height: 400px;
+    width: 50vw;
+    height: 36vw;
     background-color: #5dfa9e;
     opacity: .4;
-    filter: blur(24px);
+    filter: blur(80vw);
     z-index: 1;
     animation: glowingShadow 2.3s ease infinite alternate;
 }
@@ -954,11 +956,12 @@ border: 5px solid pink;
     grid-column: 1;
     grid-row: 1;
     font-size: 1.5vw;
-    line-height: 35px;
+    line-height: 3vw;
     padding: 7%;
 }
 
 .theEnd{ /* the literal words */
+    text-indent: 0px;
     margin-top: 7%;
     font-size: 2.5vw;
     text-align: center;
