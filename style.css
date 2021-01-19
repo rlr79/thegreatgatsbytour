@@ -42,7 +42,7 @@ p{
   position: fixed;
   height: 100%;
 padding-left: 60px;
-    top: 0%;
+    top: 5%;
 }
 
 .nav {
@@ -89,7 +89,7 @@ padding-left: 60px;
   /*display: block;*/
   border-left: 2px solid white;
   border-top: 2px solid white;
-  height: 550px;            /*Line height*/
+  height: 2550px;            /*Line height*/
   width: 20px;              /* Line width */
   position: absolute;
   left: -30px;              /* move the chapter more right */
