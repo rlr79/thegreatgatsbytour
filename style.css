@@ -7,7 +7,14 @@ body {
     width: 100%;
     background: radial-gradient(ellipse at top, #4c87aa, #00466d );
     overflow-x: hidden;
-    border: 5px solid orange;
+}
+
+@media (max-width: 1125px) {
+body {
+max-width: 1125px;
+margin-left: auto;
+margin-right: auto;
+}
 }
 
 p{
@@ -713,11 +720,6 @@ left: 50%;
   font-weight: 100;
   color: #fff;
   position: relative;   
-    border: 5px solid yellow;
-}
-
-.sectionDiv {
-    border: 5px solid blue;
 }
 
 .sections{
