@@ -312,7 +312,7 @@ left: 50%;
   top: 100%;
   left: 0;
   right: 0;
-  height: 1100px;  /* what pushes down the top banner */
+  height: 900px;  /* what pushes down the top banner */
   padding-left: 50%;
 }
 
@@ -336,35 +336,36 @@ left: 50%;
   -webkit-transform: translateZ(-200px) scale(3.1);
           transform: translateZ(-200px) scale(3.1);
     margin-top: 40%;
-    margin-left: 47%;
+    margin-left: 75%;
 }
 
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
         margin-left: 98%;
-        margin-top: -59%;
+        margin-top: -57%;
 }
 
 .parallax__layer__4 { /* Water */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
         margin-left: 62%;
-        margin-top: 59%;
+        margin-top: 58%;
 }
 
 .parallax__layer__5 { /* Pier */
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
     margin-left: 64.5%;
-    margin-top: -62%;
+    margin-top: -60%;
 }
 
 .parallax__layer__6 { /* Grass */
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
     margin-left: 49%;
-    margin-top: -63.5%;
+    margin-top: -62.5%;
+    width: 100%;
 }
 
 
@@ -420,7 +421,7 @@ left: 50%;
 
 .introductionDivFrame {
    position: relative;
-   top: 2%;
+   top: 4%;
    margin-left: 17%;            /* move the frame */
 }
 
