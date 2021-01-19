@@ -1,0 +1,973 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    height: 500px;
+    width: 100%;
+    background: radial-gradient(ellipse at top, #4c87aa, #00466d );
+    overflow-x: hidden;
+}
+
+p{
+    margin-top: 8%;
+    font-size: 16px;
+}
+
+.cite {
+    font-style: italic;
+}
+
+.cite2 {
+    font-style: italic;
+    color: palegreen;
+}
+
+.contact {
+    font-size: 14px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    text-align: right;
+}
+
+
+
+
+/* Navigation ********************/
+
+.nav__wrapper {
+    z-index: 1;
+  position: fixed;
+  height: 100%;
+padding-left: 60px;
+    top: 0%;
+}
+
+.nav {
+}
+.nav__counter {
+  font-size: 24px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.nav__counter__chapter {
+  font-size: 32px;
+  height: 0px;              /* moved the lines width*/
+  overflow: hidden;
+  /*opacity: 0;
+  -webkit-transition: height 3s ease-out, opacity 0.2s ease-out;
+  transition: height 3s ease-out, opacity 0.2s ease-out; */
+}
+.nav__title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 1px;          /* moved the lines width*/
+  width: 40px; /* moved the words right*/
+  height: 0px; /* moved the lines width*/
+  overflow: hidden;
+ /* opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out; */
+}
+.nav__body {
+  font-size: 18px;
+  overflow: hidden;
+  /*opacity: 0;
+  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;*/
+}
+/*.nav li {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}*/
+.nav li:after {
+  content: '';              /* makes the lines disappear */
+  /*display: block;*/
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  height: 550px;            /*Line height*/
+  width: 20px;              /* Line width */
+  position: absolute;
+  left: -30px;              /* move the chapter more right */
+  top: 15px;                /* move ONLY lines up and down */
+}
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #fff; /* chapter number color */ 
+  /*-webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;*/
+}
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1.5em;  /* how far right the number goes on a hover */
+}
+.nav li a:focus {
+  background-color: transparent; /* background behind clicked-on chapter */
+}
+.nav li.active {
+  pointer-events: none;
+  padding-left: 2em; /* how far the details are to the right when clicked on */
+}
+.nav li.active:after {
+  width: 35px; /*length of line when clicked on */ 
+  height: 300px;
+}
+.nav li.active .nav__counter {
+  font-size: 40px;   /* clicked on chapter number size */
+}
+
+.nav li.active .nav__counter__chapter {
+    font-size: 20px;  /* chapter word size, clicked on */
+    font-weight: bold;
+margin-bottom: 15px; /* distance above chapter number when clicked on */
+  overflow: visible;
+}
+.nav li.active .nav__title {
+    width: 150px; /* chapter detail paragraph widths when clicked on */
+    margin-left: 35px;
+  overflow: visible;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* stars *************************************************************/
+
+#layers {
+}
+
+#layers .layer {
+	background-size: auto 125%;
+	background-repeat: repeat-x;
+	height: 200px;
+	position: absolute;
+	transform: translate3d(0, 0, 0);
+	width: 200vw;
+     z-index: -1;  /* This makes it go behind the cover */
+}
+
+@keyframes twinkle {
+	from { opacity: .3; }
+	to { opacity: 1; }
+}
+
+@keyframes layer-1 {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-689px, 0, 0); }
+}
+#layers .layer:nth-child(1) {
+	animation: twinkle 10s ease-in -5s infinite alternate, layer-1 344s linear infinite;
+	background-image: url('http://imgur.com/9beLKl9.png');
+}
+
+@keyframes layer-2 {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-699px, 0, 0); }
+}
+#layers .layer:nth-child(2) {
+	animation: twinkle 3s ease-in -3s infinite alternate, layer-2 349s linear infinite;
+	background-image: url('http://imgur.com/46MRYFa.png');
+}
+
+@keyframes layer-3 {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-699px, 0, 0); }
+}
+#layers .layer:nth-child(3) {
+	animation: twinkle 3.5s ease-in infinite alternate, layer-3 349s linear infinite;
+	background-image: url('http://imgur.com/46MRYFa.png');
+}
+
+@keyframes layer-4 {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-480px, 0, 0); }
+}
+#layers .layer:nth-child(4) {
+	animation: twinkle 4s ease-in -2s infinite alternate, layer-4 240s linear infinite;
+	background-image: url('http://imgur.com/BqkETyl.png');
+}
+
+@keyframes layer-5 {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-486px, 0, 0); }
+}
+#layers .layer:nth-child(5) {
+	animation: twinkle 5.5s ease-in infinite alternate, layer-5 243s linear infinite;
+	background-image: url('http://imgur.com/x1GB77K.png');
+}
+
+@keyframes shooting-star {
+	0% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	25% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(-270px, 180px, 0);
+	}
+}
+
+#layers:before {
+	animation: 500ms linear 3s shooting-star;
+	background-image: url('http://imgur.com/ilhrli3.png');
+	background-size: 72px 50px;
+	content: ' ';
+	height: 50px;
+	left: 80%;
+	position: absolute;
+	top: -50px;
+	width: 72px;
+	z-index: -1; /* This makes the star behind the cover */
+}
+
+
+
+
+
+
+
+
+
+/* stagnant title ***********************************************************/
+
+#title {
+    position: absolute;
+    top: 110px;
+    left: 16%;
+    font-size: 25px;
+    font-family: "lato", sans-serif;
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 10px;
+}
+
+#title span {
+  background: -webkit-linear-gradient(white, #7692af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* parallax ********************************************************************/
+
+.parallax {
+  -webkit-perspective: 100px;
+          perspective: 100px;
+  height: 800px;
+  overflow-x:hidden;
+  overflow-y: auto; 
+  position: absolute;
+  margin-left: -1500px;    
+}
+
+.parallax__layer {
+    /*
+position: absolute;
+        top: 50%;
+left: 50%;
+        transform: translate(-50%, -50%);
+    */
+}
+.parallax__layer img {    /* Keeps everything level horizontally */
+  display: block;
+  position: absolute;
+  bottom: 0;
+    
+}
+
+.parallax__cover {
+  background: #000000;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 1100px;  /* what pushes down the top banner */
+  padding-left: 50%;
+}
+
+.parallax__layer__0 {
+  -webkit-transform: translateZ(-300px) scale(4);
+          transform: translateZ(-300px) scale(4);
+    width: 3000px;
+    height: 1000px;
+ /*   margin-left: 58%; */
+    
+}
+
+.parallax__layer__1 { /* Moon */
+  -webkit-transform: translateZ(-250px) scale(3.5);
+          transform: translateZ(-250px) scale(3.5);
+    margin-left: 150%;
+    margin-top: -50%;
+}
+ 
+.parallax__layer__2 { /* House */
+  -webkit-transform: translateZ(-200px) scale(3.1);
+          transform: translateZ(-200px) scale(3.1);
+    margin-top: 40%;
+    margin-left: 47%;
+}
+
+.parallax__layer__3 {  /* Lighthouse */
+  -webkit-transform: translateZ(-150px) scale(2.5);
+          transform: translateZ(-150px) scale(2.5);
+        margin-left: 98%;
+        margin-top: -59%;
+}
+
+.parallax__layer__4 { /* Water */
+  -webkit-transform: translateZ(-100px) scale(2);
+          transform: translateZ(-100px) scale(2);
+        margin-left: 62%;
+        margin-top: 59%;
+}
+
+.parallax__layer__5 { /* Pier */
+  -webkit-transform: translateZ(-50px) scale(1.5);
+          transform: translateZ(-50px) scale(1.5);
+    margin-left: 64.5%;
+    margin-top: -62%;
+}
+
+.parallax__layer__6 { /* Grass */
+  -webkit-transform: translateZ(0px) scale(1);
+          transform: translateZ(0px) scale(1);
+    margin-left: 49%;
+    margin-top: -63.5%;
+}
+
+
+.lighthouse .lightAnimation {
+  position: absolute;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #4c87aa;
+  -webkit-animation: glow 5s ease infinite;
+          animation: glow 5s ease infinite;
+}
+
+
+@keyframes glow {
+
+  16.5% {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+  }
+  33.3% {
+    left: 113px;
+    width: 3px;
+    background-color: #51e831;
+    box-shadow: 0px 0px 15px 20px #d5ffcc;
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+  }
+  66.6% {
+    left: 109px;
+    width: 0px;
+    background-color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* parallax intro paragraph *******************************************************/
+
+
+
+.introductionDivFrame {
+   position: relative;
+   top: 2%;
+   margin-left: 17%;            /* move the frame */
+}
+
+.introductionDivWords {
+    position: absolute;
+    top: 13%;
+    left: 10%;                   /* move words to the right */
+    width: 600px;
+    background-color: transparent;
+
+}
+.introduction {
+    margin-top: 3%;
+    text-indent: 30px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Poiret One', cursive;
+    color: #ebebeb;
+}
+
+/* Glowing Words *********/
+.locationsWords{
+    margin-top: -2%;            /* move glow words up */
+    font-size: 40px;
+    text-align: center;
+    color: #ebebeb;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: #18181b;
+}
+
+.card-body-locations {
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+    font-family: monospace;
+}
+
+
+.locationWordsText {
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 8%;           /* move glow words right */
+}
+
+.locationWordsText.text-glow {
+    
+    filter: blur(3px);
+    background-color: #3bff00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowingText 2.5s infinite alternate;
+}
+
+
+@keyframes glowingText {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Title Banners*******************************/
+
+.titleBanners{
+    background-color: #010101;
+    border-top: 10px solid #000000;
+    border-bottom: 10px solid #000000;
+}
+
+
+.titleBannerContents {
+    margin-left: 18%;
+    padding: 14%;
+}
+
+.titleBannerCity{
+    font-size: 60px;
+    font-family: 'Homenaje', sans-serif;
+    /*font-family: 'Courier Prime', monospace;*/
+    /*margin-top: -10%;    Moves words in title up and down */
+}
+
+.titleBannerCityPart{
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+#titleBanner1 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 120%;
+}
+
+#titleBanner1b {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#titleBanner1c {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#titleBanner1d {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#titleBanner2 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#titleBanner2b {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+}
+
+#titleBanner3 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 125%;
+}
+
+#titleBanner4 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#titleBanner5 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 180%;
+}
+
+#titleBanner6 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#titleBanner7 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 125%;
+}
+
+#titleBanner8 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+}
+
+#titleBanner9 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 135%;
+}
+
+#titleBanner9b {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+}
+
+#titleBanner9c {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+/* Sections backgrounds ****************************/
+
+
+#section1 {
+    background-image: url('sectionPhotos/deco8.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section2 {
+    background-image: url('sectionPhotos/deco9.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section3 {
+    background-image: url('sectionPhotos/deco10.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section4 {
+    background-image: url('sectionPhotos/deco5.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section5 {
+    background-image: url('sectionPhotos/deco4.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section6 {
+    background-image: url('sectionPhotos/deco3.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section7 {
+    background-image: url('sectionPhotos/deco8.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section8 {
+    background-image: url('sectionPhotos/deco9.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+#section9 {
+    background-image: url('sectionPhotos/deco10.jpg');
+    background-attachment: fixed;
+   /* padding-top: 5%;
+    padding-bottom: 5%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sections ***********************************************/
+
+.wrapper {    /* Where is the end?????????????*/
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  color: #fff;
+  position: relative;   
+}
+
+.sections{
+    display: inline-block;
+    margin-top: 56%;
+    width: 100%;
+}
+
+.grouping {
+/* border: 5px solid red; */
+    width: 1000px;
+    top: 50%;
+    padding-bottom: 5%;
+    margin-top: 16%;
+    margin-bottom: 14%;
+    margin-left: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.map {
+    border: 2px solid black;
+    align-self: center;
+    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,1); 
+    box-shadow: -1px 1px 50px 10px rgba(0,0,0,1);
+}
+
+.wordBox {
+    align-self: center; /* makes wordbox adjust height */
+    background-color: #212121;
+    max-height: 460px;
+    overflow-y: auto;  
+    font-size: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    border: 3px solid black;
+    width: 35%;
+    float: right;
+    margin-left: 5%;  /* moves mapt */
+    margin-right: 5%; /* moves word box groups from the right */
+    padding: 2%;  
+    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
+    box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
+}
+
+.step {
+    text-indent: 0px;
+/* font-weight: bold; */
+    font-size: 30px;
+    margin-left: 10px;
+    
+}
+.smallDate {
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 4%;
+}
+
+
+.scrollDownWords{
+    margin-top: 2%;
+    font-size: 20px;
+    text-shadow: -1px -1px 18px rgba(255,255,255,1);
+    color: goldenrod;
+}
+
+
+/* "Scroll Down" Glowing Words *********/
+.scrollWords{
+    letter-spacing: 8px;
+    font-size: 22px;
+    color: goldenrod;
+    text-shadow: 0px 0px 15px rgba(218,165,32,100); /* makes the shadow really show */
+    margin-top: -12px;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: #18181b;
+}
+
+.card-body-scroll {
+    display: grid;
+    background-color: #212121;  /* #212121 */
+    height: 40px;
+}
+
+
+.scrollWordsText {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.scrollWordsText.text-glow {
+    font-weight: 400;
+    filter: blur(0px);
+    background-color: #daa520;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowingText 1.5s infinite alternate;
+}
+
+
+@keyframes glowingText {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Final Tour Step, Above the glowing paragraph *************/ 
+.finalGrouping {
+  max-height: 460px;
+  overflow-y: auto;  
+  margin-top: 16%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.finalWordBox {
+    text-indent: 30px;
+    background-color: #212121;
+    max-height: 460px;
+    overflow-y: auto;  
+    font-size: 20px;
+    border: 3px solid black;
+    width: 355px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
+    box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* The End Glowing Box *********************/
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 110vh; /* area all around the box */
+}
+
+.card {
+    position: relative;
+    background-color: #212121;
+    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
+    box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
+}
+
+.card-body {
+    z-index: 2;
+    display: grid;
+    width: 600px;
+    height: 400px;
+    background-color: #18181b;
+    text-indent: 30px;
+    font-family: monospace;
+    font-family: 'Special Elite', cursive;
+    text-align: justify;
+}
+
+.card-glow {
+    position: absolute;
+    top: 2;
+    left: 2;
+    width: 600px;
+    height: 400px;
+    background-color: #5dfa9e;
+    opacity: .4;
+    filter: blur(24px);
+    z-index: 1;
+    animation: glowingShadow 2.3s ease infinite alternate;
+}
+
+.indent {
+    margin-top: 3%;
+}
+
+.theEndText { /* all the paragraphs and words */
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 20px;
+    line-height: 35px;
+    padding: 7%;
+}
+
+.theEnd{ /* the literal words */
+    margin-top: 7%;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.theEndText.text-glow {
+    background-color: #60ff7d;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowingText 2.3s infinite alternate;
+}
+
+@keyframes glowingShadow {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(0.65);
+  }
+}
+
+@keyframes glowingText {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
