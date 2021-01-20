@@ -300,6 +300,18 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 
 }
 
+.parallaxWiden {
+    width: 100vw;
+}
+
+.moonWiden {
+    width: 10vw;
+}
+
+.widenPier {
+    width: 85vw;
+}
+
 .parallax__layer__0 {
   -webkit-transform: translateZ(-300px) scale(1);
           transform: translateZ(-300px) scale(1);
@@ -311,67 +323,57 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   -webkit-transform: translateZ(-250px) scale(3.5);
           transform: translateZ(-250px) scale(3.5);
     margin-left: 120vw;
-    margin-top: -33%;
+    margin-top: -60%;
 }
  
 .parallax__layer__2 { /* House */
   -webkit-transform: translateZ(-200px) scale(3.1);
           transform: translateZ(-200px) scale(3.1);
-    margin-top: 70%;
-    margin-left: -3%; 
+    margin-top: 110%;
+
     display: block;
-}
-
-.parallaxWiden {
-    width: 100vw;
-}
-
-.moonWiden {
-    width: 10vw;
-}
-
-.widenPier {
-    width: 105vw;
 }
 
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
+
+
+
 }
 
 .parallax__layer__4 { /* Water */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
         margin-left: 0%;
-        margin-top: 39%;
+        margin-top: 137%;
     max-width: 100%;
 }
 
 .parallax__layer__5 { /* Pier */
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
-    margin-left: -2%;
-    margin-top: 43%;
+    margin-left: 13%;
+    margin-top: 80%;
 }
 
 .parallax__layer__6 { /* Grass */
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
-    margin-top: -10%;
+    margin-top: -30%;
 }
 
 
 .lighthouse .lightAnimation {
-       margin-left: auto;
-    margin-right: auto;   /* keeps the lighthouse in the center */ 
+  position: absolute;
+  top: -6vw; /* move lighthouse up or down */
+    margin-left: 43vw;   /* move lightout right or left */
   height: 5px;
   border-radius: 100%;
-    width: 5px;
-  background-color: #4c87aa;
-  -webkit-animation: glow 5s ease infinite;
-          animation: glow 5s ease infinite;
+  background-color: #fff;
+  -webkit-animation: glow 3s ease infinite;
+          animation: glow 3s ease infinite;
 }
-
 
 @keyframes glow {
 
