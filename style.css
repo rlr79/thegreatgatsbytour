@@ -512,7 +512,6 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
     background-color: #010101;
     border-top: 10px solid #000000;
     border-bottom: 10px solid #000000;
-     width: 100%;
 }
 
 
@@ -541,6 +540,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+
 }
 
 #titleBanner1c {
@@ -566,7 +566,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 200%;
-
+width: 100%;
 }
 
 #titleBanner3 {
@@ -615,12 +615,14 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 120%;
+    width: 100%;
 }
 
 #titleBanner9c {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+    width: 100%;
 }
 
 
