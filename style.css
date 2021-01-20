@@ -255,13 +255,13 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
 
 #title {
     position: absolute;
-    top: 110px;
-    left: 16%;
+    top: 10vw;
+    left: 15%;
     font-size:  1.9vw;
     font-family: "lato", sans-serif;
     text-align: center;
     color: #FFF;
-    letter-spacing: 10px;
+    letter-spacing: .9vw;
 }
 
 #title span {
@@ -270,6 +270,9 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
   -webkit-text-fill-color: transparent;
 }
 
+.GatsbyTitle {
+    width: 45vw;
+}
 
 
 
@@ -296,6 +299,7 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
   overflow-y: auto; 
   position: absolute;
     width: 100%;
+
 }
 
 .parallax__layer {
@@ -310,7 +314,6 @@ left: 50%;
   display: block;
   position: absolute;
   bottom: 0;
-    
 }
 
 .parallax__cover {
@@ -319,9 +322,6 @@ left: 50%;
   display: block;
   position: absolute;
   width: 100%;
-  top: 100%;
-  left: 0;
-  right: 0;
   height: 75vw;  /* what pushes down the top banner */
 
 }
@@ -341,16 +341,15 @@ left: 50%;
   -webkit-transform: translateZ(-250px) scale(3.5);
           transform: translateZ(-250px) scale(3.5);
     margin-left: 100vw;
-    margin-top: -90%;
+    margin-top: -130%;
     border: 5px solid blue;
-    max-width: 100%;
 }
  
 .parallax__layer__2 { /* House */
   -webkit-transform: translateZ(-200px) scale(3.1);
           transform: translateZ(-200px) scale(3.1);
     margin-top: 60%;
-border: 5px solid purple;
+border: 5px solid;
     margin-left: 0%; 
     display: block;
 }
@@ -359,18 +358,25 @@ border: 5px solid purple;
     width: 100vw;
 }
 
+.moonWiden {
+    width: 10vw;
+}
+
+.widenPier {
+    width: 105vw;
+}
+
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
-        margin-top: -12%;
-            margin-left: 60vw;
+
 }
 
 .parallax__layer__4 { /* Water */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
         margin-left: 0%;
-        margin-top: 42%;
+        margin-top: 48%;
     max-width: 100%;
 }
 
@@ -378,15 +384,13 @@ border: 5px solid purple;
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
     margin-left: 0%;
-    margin-top: -10%;
+    margin-top: 58%;
 }
 
 .parallax__layer__6 { /* Grass */
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
-    margin-left: 0%;
-    margin-top: -300%;
-    max-width: 100%;
+    margin-top: -10%;
 }
 
 
@@ -732,6 +736,7 @@ border: 5px solid pink;
 
 /* Sections ***********************************************/
 
+
 .wrapper {    /* Where is the end?????????????*/
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
@@ -743,8 +748,9 @@ border: 5px solid pink;
 .sections{
     border: 5px solid red;
     display: inline-block;
-    margin-top: 72vw;    /* move the wections un and down under the parallax */
+       /* move the wections un and down under the parallax */
     width: 100%;
+    margin-top: 800px;
 }
 
 .grouping {
