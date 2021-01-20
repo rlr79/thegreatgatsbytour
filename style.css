@@ -536,6 +536,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 120%;
+    background-image: url('sectionPhotos/Minnesota4.jpg');
 }
 
 #titleBanner1b {
@@ -639,13 +640,14 @@ width: 100%;
 
 #section1 {
     background-image: url('sectionPhotos/deco8.jpg');
+    background-size: 40vw;
     background-attachment: fixed;
-   /* padding-top: 5%;
-    padding-bottom: 5%; */
+
 }
 
 #section2 {
     background-image: url('sectionPhotos/deco9.jpg');
+    background-size: 35vw;
     background-attachment: fixed;
    /* padding-top: 5%;
     padding-bottom: 5%; */
@@ -654,6 +656,7 @@ width: 100%;
 #section3 {
     background-image: url('sectionPhotos/deco10.jpg');
     background-attachment: fixed;
+    background-size: 35vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -661,6 +664,7 @@ width: 100%;
 #section4 {
     background-image: url('sectionPhotos/deco5.jpg');
     background-attachment: fixed;
+    background-size: 25vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -668,6 +672,7 @@ width: 100%;
 #section5 {
     background-image: url('sectionPhotos/deco4.jpg');
     background-attachment: fixed;
+    background-size: 25vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -675,6 +680,7 @@ width: 100%;
 #section6 {
     background-image: url('sectionPhotos/deco3.jpg');
     background-attachment: fixed;
+    background-size: 30vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -682,6 +688,7 @@ width: 100%;
 #section7 {
     background-image: url('sectionPhotos/deco8.jpg');
     background-attachment: fixed;
+    background-size: 40vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -689,6 +696,7 @@ width: 100%;
 #section8 {
     background-image: url('sectionPhotos/deco9.jpg');
     background-attachment: fixed;
+    background-size: 35vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -696,6 +704,7 @@ width: 100%;
 #section9 {
     background-image: url('sectionPhotos/deco10.jpg');
     background-attachment: fixed;
+    background-size: 35vw;
    /* padding-top: 5%;
     padding-bottom: 5%; */
 }
@@ -759,7 +768,7 @@ width: 100%;
     text-align: justify;
     border: 3px solid black;
     float: right;
-    margin-left: 5%;  /* moves mapt */
+    margin-left: 5%;  /* moves maps */
     margin-right: 12%; /* moves word box groups from the right */
     padding: 2%;  
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
@@ -851,13 +860,14 @@ width: 100%;
 
 /* The Final Tour Step, Above the glowing paragraph *************/ 
 .finalGrouping {
-    max-height: 460px;
-    overflow-y: auto;  
-    margin-top: 16%;
-    display: flex;
-    justify-content: flex-end;
     width: 90vw;
-    /* float: right; */
+    top: 50%;
+    padding-bottom: 5%;
+    margin-top: 16%;
+    margin-left: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 
@@ -871,7 +881,7 @@ width: 100%;
     font-size: 20px;
     border: 3px solid black;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     padding: 2%;
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
     box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9);
