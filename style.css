@@ -294,7 +294,7 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
     border: 5px solid yellow;
   -webkit-perspective: 100px;
           perspective: 100px;
-  height: 800px;
+  height: 90vw;
   overflow-x:hidden;
   overflow-y: auto; 
   position: absolute;
@@ -750,7 +750,7 @@ border: 5px solid pink;
     display: inline-block;
        /* move the wections un and down under the parallax */
     width: 100%;
-    margin-top: 800px;
+    margin-top: 90vw;
 }
 
 .grouping {
