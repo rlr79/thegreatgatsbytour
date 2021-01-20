@@ -18,7 +18,7 @@ margin-right: auto;
 }
 
 p{
-    margin-top: 8%;
+    margin-top: 6%;
     font-size: 1.3vw;
 }
 
@@ -49,80 +49,63 @@ p{
     z-index: 1;
   position: fixed;
   height: 100%;
-padding-left: 60px;
+padding-left: 8%;
     top: 5%;
 }
 
 .nav {
 }
 .nav__counter {
-  font-size: 2vw;
+    
+  font-size: 3vw;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 .nav__counter__chapter {
-  /* font-size: 5vw; */
   height: 0px;              /* moved the lines width*/
   overflow: hidden;
-  /*opacity: 0;
-  -webkit-transition: height 3s ease-out, opacity 0.2s ease-out;
-  transition: height 3s ease-out, opacity 0.2s ease-out; */
+
 }
 .nav__title {
-  /* font-size: 5vw; */
   font-weight: 300;
   margin-top: 1px;          /* moved the lines width*/
-  width: 40px; /* moved the words right*/
+  width: 10vw; /* moved the words right*/
   height: 0px; /* moved the lines width*/
   overflow: hidden;
- /* opacity: 0;
-  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  transition: height 0.3s ease-out, opacity 0.2s ease-out; */
 }
 .nav__body {
-  /* font-size: 5vw; */
   overflow: hidden;
-  /*opacity: 0;
-  -webkit-transition: height 0.3s ease-out, opacity 0.2s ease-out;
-  transition: height 0.3s ease-out, opacity 0.2s ease-out;*/
 }
-/*.nav li {
-  position: relative;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  margin-bottom: 1em;
-}*/
+
 .nav li:after {
   content: '';              /* makes the lines disappear */
-  /*display: block;*/
   border-left: 2px solid white;
   border-top: 2px solid white;
   height: 2550px;            /*Line height*/
-  width: 2vw;              /* Line width */
+  width: 3vw;              /* Line width */
   position: absolute;
-  left: -30px;              /* move the chapter more right */
+  left: -4vw;              /* move the chapter more right */
   top: 15px;                /* move ONLY lines up and down */
 }
 .nav li a {
+    top: -1vw;
   display: block;
   padding: 0;
   color: #fff; /* chapter number color */ 
-  /*-webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;*/
 }
 .nav li a:hover {
   background-color: transparent;
-  padding-left: 1.5em;  /* how far right the number goes on a hover */
+  padding-left: 1em;  /* how far right the number goes on a hover */
 }
 .nav li a:focus {
   background-color: transparent; /* background behind clicked-on chapter */
 }
 .nav li.active {
   pointer-events: none;
-  padding-left: 2em; /* how far the details are to the right when clicked on */
+  padding-left: 1vw; /* how far the details are to the right when clicked on */
 }
 .nav li.active:after {
-  width: 35px; /*length of line when clicked on */ 
+  width: 4vw; /*length of line coming out when clicked on */ 
   height: 300px;
 }
 .nav li.active .nav__counter {
@@ -132,12 +115,12 @@ padding-left: 60px;
 .nav li.active .nav__counter__chapter {
     font-size: 1.5vw;  /* chapter word size, clicked on */
     font-weight: bold;
-margin-bottom: 15px; /* distance above chapter number when clicked on */
+margin-bottom: 1vm; /* distance above chapter number when clicked on */
   overflow: visible;
 }
 .nav li.active .nav__title {
     width: 4vw; /* chapter detail paragraph widths when clicked on */
-    margin-left: 2vw;
+    margin-left: 3vw;
   overflow: visible;
     font-size: 1.8vw;
 }
@@ -256,7 +239,7 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
 #title {
     position: absolute;
     top: 10vw;
-    left: 15%;
+    left: 20%;
     font-size:  1.9vw;
     font-family: "lato", sans-serif;
     text-align: center;
@@ -291,10 +274,9 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
 /* parallax ********************************************************************/
 
 .parallax {
-    border: 5px solid yellow;
   -webkit-perspective: 100px;
           perspective: 100px;
-  height: 90vw;
+  height: 70vw%;
   overflow-x:hidden;
   overflow-y: auto; 
   position: absolute;
@@ -302,14 +284,6 @@ margin-bottom: 15px; /* distance above chapter number when clicked on */
 
 }
 
-.parallax__layer {
-    /*
-position: absolute;
-        top: 50%;
-left: 50%;
-        transform: translate(-50%, -50%);
-    */
-}
 .parallax__layer img {    /* Keeps everything level horizontally */
   display: block;
   position: absolute;
@@ -317,22 +291,18 @@ left: 50%;
 }
 
 .parallax__cover {
-    border: 5px solid green;
   background: #000000;
   display: block;
   position: absolute;
   width: 100%;
   height: 75vw;  /* what pushes down the top banner */
+    margin-top: -10%;
 
 }
 
 .parallax__layer__0 {
   -webkit-transform: translateZ(-300px) scale(1);
           transform: translateZ(-300px) scale(1);
-    /* width: 3000px; */
-    height: 1000px;
- /*   margin-left: 58%; */
-    border: 5px solid blue;
     max-width: 100%;
     
 }
@@ -340,17 +310,15 @@ left: 50%;
 .parallax__layer__1 { /* Moon */
   -webkit-transform: translateZ(-250px) scale(3.5);
           transform: translateZ(-250px) scale(3.5);
-    margin-left: 100vw;
-    margin-top: -130%;
-    border: 5px solid blue;
+    margin-left: 120vw;
+    margin-top: -33%;
 }
  
 .parallax__layer__2 { /* House */
   -webkit-transform: translateZ(-200px) scale(3.1);
           transform: translateZ(-200px) scale(3.1);
-    margin-top: 60%;
-border: 5px solid;
-    margin-left: 0%; 
+    margin-top: 70%;
+    margin-left: -3%; 
     display: block;
 }
 
@@ -369,22 +337,21 @@ border: 5px solid;
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
-
 }
 
 .parallax__layer__4 { /* Water */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
         margin-left: 0%;
-        margin-top: 48%;
+        margin-top: 39%;
     max-width: 100%;
 }
 
 .parallax__layer__5 { /* Pier */
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
-    margin-left: 0%;
-    margin-top: 58%;
+    margin-left: -2%;
+    margin-top: 43%;
 }
 
 .parallax__layer__6 { /* Grass */
@@ -395,9 +362,11 @@ border: 5px solid;
 
 
 .lighthouse .lightAnimation {
-  position: absolute;
+       margin-left: auto;
+    margin-right: auto;   /* keeps the lighthouse in the center */ 
   height: 5px;
   border-radius: 100%;
+    width: 5px;
   background-color: #4c87aa;
   -webkit-animation: glow 5s ease infinite;
           animation: glow 5s ease infinite;
@@ -448,20 +417,20 @@ border: 5px solid;
     position: relative;
     top: 10vw;
     margin-left: 20%; /* move the frame */ 
-    border: 5px solid orange;
 }
 
 .frame {
     width: 65vw;
+    height: 52vw
 }
 
 .introductionDivWords {
     position: absolute;
-    top: 13%;
-    left: 5vw;                   /* move words to the right */
+    top: 17%;
+    left: 7.5%;                   /* move words to the right */
     background-color: transparent;
-border: 5px solid pink;
-    max-width: 70%;
+    max-width: 65%;
+    max-height: 70%;
 }
 .introduction {
     text-indent: 30px;
@@ -471,10 +440,11 @@ border: 5px solid pink;
     color: #ebebeb;
 }
 
-/* Glowing Words *********/
+/* Glowing Words *****************************************************/
 .locationsWords{
+    
     margin-top: -2%;            /* move glow words up */
-   font-size: 3vw;
+   font-size: 2.5vw;
     text-align: center;
     color: #ebebeb;
 }
@@ -487,19 +457,20 @@ border: 5px solid pink;
 }
 
 .card-body-locations {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     display: grid;
-    place-items: center;
-    background-color: #000000;
+    background-color: transparent;
     font-family: monospace;
 }
 
 
 .locationWordsText {
     font-family: 'Poiret One', cursive;
-    font-size: 60px;
     grid-column: 1;
     grid-row: 1;
-    margin-left: 8%;           /* move glow words right */
+
 }
 
 .locationWordsText.text-glow {
@@ -550,8 +521,6 @@ border: 5px solid pink;
 .titleBannerCity{
     font-size: 5vw;
     font-family: 'Homenaje', sans-serif;
-    /*font-family: 'Courier Prime', monospace;*/
-    /*margin-top: -10%;    Moves words in title up and down */
 }
 
 .titleBannerCityPart{
@@ -742,19 +711,16 @@ border: 5px solid pink;
   font-weight: 100;
   color: #fff;
   position: relative;   
-    border: 5px solid purple;
 }
 
 .sections{
-    border: 5px solid red;
     display: inline-block;
        /* move the wections un and down under the parallax */
     width: 100%;
-    margin-top: 90vw;
+    margin-top: 70vw;
 }
 
 .grouping {
-/* border: 5px solid red; */
     width: 90vw;
     top: 50%;
     padding-bottom: 5%;
@@ -780,8 +746,7 @@ border: 5px solid pink;
     max-height: 35vw;
     max-width: 30vw;
     overflow-y: auto;  
-    /* font-size: 2vw */
-    text-indent: 30px;
+    text-indent: 2vw;
     text-align: justify;
     border: 3px solid black;
     float: right;
@@ -806,22 +771,10 @@ border: 5px solid pink;
 }
 
 
-.scrollDownWords{
-    margin-top: 2%;
-    font-size: 1.8vw;
-    text-shadow: -1px -1px 18px rgba(255,255,255,1);
-    color: goldenrod;
-}
+
+/* "Scroll Down" Glowing Words ****************************************/
 
 
-/* "Scroll Down" Glowing Words *********/
-.scrollWords{
-    letter-spacing: 8px;
-    font-size: 1.8vw;
-    color: goldenrod;
-    text-shadow: 0px 0px 15px rgba(218,165,32,100); /* makes the shadow really show */
-    margin-top: -12px;
-}
 
 .card {
     position: relative;
@@ -832,12 +785,20 @@ border: 5px solid pink;
 
 .card-body-scroll {
     display: grid;
-    background-color: #212121;  /* #212121 */
+    background-color: #212121;  
     height: 40px;
 }
 
 
 .scrollWordsText {
+        text-indent: 0px;
+    letter-spacing: .8vw;
+    font-size: 1.8vw;
+    color: goldenrod;
+    text-shadow: 0px 0px 15px rgba(218,165,32,100); /* makes the shadow really show */
+    width: 90%;
+    height: 30%;
+    margin-top: 2%;
     grid-column: 1;
     grid-row: 1;
 }
