@@ -9,12 +9,14 @@ body {
     overflow-x: hidden;
 }
 
-@media (max-width: 1125px) {
-body {
-max-width: 1125px;
-margin-left: auto;
-margin-right: auto;
-}
+@media only screen and (max-width: 384px) {
+
+.titleBanners
+    {
+         background: url('http://www.outbarga.in/images/comingsoon.jpg');
+
+       display: block;
+} 
 }
 
 p{
@@ -143,7 +145,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 	height: 25vw;
 	position: absolute;
 	transform: translate3d(0, 0, 0);
-	width: 200%;
+	width: 100%;
     overflow-x:hidden;
      z-index: -1;  /* This makes it go behind the cover */
 }
