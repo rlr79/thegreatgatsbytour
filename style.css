@@ -34,10 +34,8 @@ p{
 .contact {
     font-size: 1.1vw;
     position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    text-align: right;
+    left: 40%;
+    bottom: 1vw;
 }
 
 
@@ -478,11 +476,11 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 
 .locationWordsText.text-glow {
     
-    filter: blur(3px);
+    filter: blur(.1vw);
     background-color: #3bff00;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: glowingText 2.5s infinite alternate;
+    animation: glowingText 2s infinite alternate;
 }
 
 
@@ -513,6 +511,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
     background-color: #010101;
     border-top: 10px solid #000000;
     border-bottom: 10px solid #000000;
+     width: 100%;
 }
 
 
@@ -559,12 +558,14 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
 #titleBanner2b {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 200%;
+
 }
 
 #titleBanner3 {
@@ -886,7 +887,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 .container {
     display: grid;
     place-items: center;
-    height: 110vh; /* area all around the box */
+    height: 90vh; /* area all around the box */
 }
 
 .card {
