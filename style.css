@@ -145,7 +145,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 	height: 200px;
 	position: absolute;
 	transform: translate3d(0, 0, 0);
-	width: 100vw;
+	width: 100%;
      z-index: -1;  /* This makes it go behind the cover */
 }
 
@@ -276,11 +276,12 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
-  height: 70vw%;
+  height: 100vw;
   overflow-x:hidden;
   overflow-y: auto; 
   position: absolute;
     width: 100%;
+    border-bottom: 1vw solid #2f2f2f;
 
 }
 
@@ -295,7 +296,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   display: block;
   position: absolute;
   width: 100%;
-  height: 75vw;  /* what pushes down the top banner */
+  height: 95vw;  /* what pushes down the top banner */
     margin-top: -10%;
 
 }
@@ -719,7 +720,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
     display: inline-block;
        /* move the wections un and down under the parallax */
     width: 100%;
-    margin-top: 70vw;
+    margin-top: 100vw;
 }
 
 .grouping {
