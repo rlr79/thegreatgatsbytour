@@ -3,7 +3,7 @@
 }
 
 body {
-    height: 500px;
+    height: 700px;
     width: 230;
     background: radial-gradient(ellipse at top, #4c87aa, #00466d );
     overflow-x: hidden;
@@ -138,12 +138,13 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 }
 
 #layers .layer {
-	background-size: auto 125%;
+	background-size: auto 100%;
 	background-repeat: repeat-x;
-	height: 200px;
+	height: 25vw;
 	position: absolute;
 	transform: translate3d(0, 0, 0);
-	width: 100%;
+	width: 200%;
+    overflow-x:hidden;
      z-index: -1;  /* This makes it go behind the cover */
 }
 
