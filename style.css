@@ -742,6 +742,7 @@ a {
 }
 
 .wordBox {
+    border: 3px solid black;
     align-self: center;         /* makes wordbox adjust height */
     background-color: #212121;
     max-height: 35vw;
@@ -755,9 +756,6 @@ a {
     padding: 2%;  
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
     box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
-}
-.wordBoxParagraph{
-    border: 3px solid black;
 }
 
 .step {
