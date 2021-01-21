@@ -372,7 +372,6 @@ a {
     margin-left: 4vw;   /* move lightout right or left */
     height: 5px;
     border-radius: 100%;
-    background-color: #fff;
   -webkit-animation: glow 3s ease infinite;
           animation: glow 3s ease infinite;
 }
