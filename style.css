@@ -3,21 +3,11 @@
 }
 
 body {
-    height: 700px;
-    width: 230;
+    height: 100%;
     background: radial-gradient(ellipse at top, #4c87aa, #00466d );
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 384px) {
-
-.titleBanners
-    {
-         background: url('http://www.outbarga.in/images/comingsoon.jpg');
-
-       display: block;
-} 
-}
 
 p{
     margin-top: 6%;
@@ -36,8 +26,8 @@ p{
 .contact {
     font-size: 1.1vw;
     position: fixed;
-    left: 40%;
-    bottom: 1vw;
+    margin-left: 30%;
+    bottom: 3vw;
 }
 
 
@@ -142,10 +132,10 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 #layers .layer {
 	background-size: auto 100%;
 	background-repeat: repeat-x;
-	height: 25vw;
+	height: 40vw;
 	position: absolute;
 	transform: translate3d(0, 0, 0);
-	width: 100%;
+	width: 200%;
     overflow-x:hidden;
      z-index: -1;  /* This makes it go behind the cover */
 }
@@ -237,10 +227,13 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 
 /* stagnant title ***********************************************************/
 
+span {
+}
 #title {
     position: absolute;
-    top: 10vw;
-    left: 20%;
+     margin-top: 20vw;
+     width: 60vw;
+    margin-left: 10vw;
     font-size:  1.9vw;
     font-family: "lato", sans-serif;
     text-align: center;
@@ -255,7 +248,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 }
 
 .GatsbyTitle {
-    width: 45vw;
+   width: 50vw;
 }
 
 
@@ -292,15 +285,6 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   bottom: 0;
 }
 
-.parallax__cover {
-  background: #000000;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 95vw;  /* what pushes down the top banner */
-    margin-top: -10%;
-
-}
 
 .parallaxWiden {
     width: 100vw;
@@ -318,7 +302,7 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
   -webkit-transform: translateZ(-300px) scale(1);
           transform: translateZ(-300px) scale(1);
     max-width: 100%;
-    
+    height: 10vw;
 }
 
 .parallax__layer__1 { /* Moon */
@@ -362,17 +346,35 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
 .parallax__layer__6 { /* Grass */
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
-    margin-top: 0%;
+
 }
 
+a {
+    font-size: .1vw;
+}
 
+.parallax__cover {
+  background: #000000;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 75vw;  /* what pushes down the top banner */
+    margin-top: -10%;
 
+}
+
+.lighthouse {
+  margin: 0 auto;
+  width: 250px;
+  position: relative;
+  display: block;
+}
 
 .lighthouse .lightAnimation {
   position: absolute;
   top: -6vw; /* move lighthouse up or down */
-    margin-left: 43vw;   /* move lightout right or left */
-  height: 5px;
+    margin-left: 4vw;   /* move lightout right or left */
+  height: 1vw;
   border-radius: 100%;
   background-color: #fff;
   -webkit-animation: glow 3s ease infinite;
@@ -777,6 +779,9 @@ margin-bottom: 1vm; /* distance above chapter number when clicked on */
     padding: 2%;  
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
     box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
+}
+.wordBoxParagraph{
+    border: 3px solid black;
 }
 
 .step {
