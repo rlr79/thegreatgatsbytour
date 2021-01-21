@@ -322,6 +322,7 @@ span {
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
+    margin-left: 17%; 
 }
 
 .parallax__layer__4 { /* Water */
@@ -369,7 +370,7 @@ a {
 .lighthouse .lightAnimation {
     position: absolute;
     top: -5vw; /* move lighthouse up or down */
-    margin-left: 4vw;   /* move lightout right or left */
+      /* move lightout right or left */
     height: 5px;
     border-radius: 100%;
   -webkit-animation: glow 3s ease infinite;
@@ -394,7 +395,7 @@ a {
   66.6% {
     left: 109px;
     width: 0px;
-    background-color: #51e831;
+    background-color: #fff;
   }
 }
 
