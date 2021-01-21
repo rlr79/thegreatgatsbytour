@@ -379,7 +379,7 @@ a {
 @keyframes glow {
 
   16.5% {
-    background-color: #fff;
+    background-color: transparent;
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
   }
   33.3% {
@@ -394,7 +394,7 @@ a {
   66.6% {
     left: 109px;
     width: 0px;
-    background-color: #fff;
+    background-color: #51e831;
   }
 }
 
