@@ -426,6 +426,11 @@ a {
     margin-left: 20%; /* move the frame */ 
 }
 
+.card-body-locations {
+    margin-top: 1vw;
+}
+
+
 .frame {
     width: 65vw;
     height: 52vw
@@ -446,6 +451,9 @@ a {
     font-family: 'Poiret One', cursive;
     color: #ebebeb;
 }
+
+
+
 
 /* Glowing Words *****************************************************/
 .locationsWords{
@@ -477,6 +485,9 @@ a {
     font-family: 'Poiret One', cursive;
     grid-column: 1;
     grid-row: 1;
+   /*     width: 95%;
+    height: 30%; */
+     text-shadow: 0px 0px 6px rgba(34,148,0,100); /* makes the shadow really show */
 
 }
 
@@ -793,10 +804,7 @@ a {
     height: 40px;
 }
 
-
 .scrollWordsText {
-    top: 0;
-    left: 0;
     text-indent: 2vw;
     letter-spacing: .5vw;
     font-size: 1.8vw;
