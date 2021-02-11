@@ -9,6 +9,7 @@ body {
 }
 
 
+
 p{
     margin-top: 1vw;
     font-size: 1.3vw;
@@ -766,7 +767,7 @@ a {
     text-align: justify;
     float: right;
     margin-left: 3vw;            /* moves maps */
-    margin-right: 10%;          /* moves word box groups from the right */
+    margin-right: 12%;          /* moves word box groups from the right */
     padding: 2%;  
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
     box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
@@ -980,7 +981,52 @@ a {
 }
 
 
+@media screen and (max-width: 700px) {
+    
+    .smallDate {
+    font-size: 2.5vw; 
+}
+    .step {
+        font-size: 3.5vw;
+    }
+    p {
+        font-size: 2.1vw;
+    }
+    .wordBox {
+        max-height: 70vw;
+    }
+    .scrollWordsText {
+        font-size: 2.5vw;
+        letter-spacing: .1vw;
+    }
+    .container {
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .introduction {
+        font-size: 2.5vw;
+    }
+    .frame {
+        height: 105vw;
+        width: 70vw;
+    }
+    .introductionDivWords {
+       left: 11.5%;   
+        top: 15%;
+    }
+    .locationsWords {
+        font-size: 3.2vw;
+    }
+    .card-body-locations {
+        width: 90%;
+    }
+    
+    .parallax__cover {
 
+    height: 125vw;  /* what pushes down the top banner */
+
+}
+}
 
 
 
