@@ -106,7 +106,7 @@ p{
 }
 
 .nav li.active .nav__counter__chapter {
-    font-size: 1.5vw;  /* chapter word size, clicked on */
+    font-size: 1.5vw;  /* "chapter" word size, clicked on */
     font-weight: bold;
     margin-bottom: 1vm; /* distance above chapter number when clicked on */
     overflow: visible;
@@ -875,6 +875,7 @@ a {
     background-color: #212121;
     overflow-y: auto;  
     font-size: 20px;
+    text-align: justify;
     border: 3px solid black;
     margin-left: 5%;
     margin-right: 10%;
@@ -992,16 +993,27 @@ a {
     p {
         font-size: 2.1vw;
     }
+        .map {
+    max-width: 40vw;
+            max-height: 50vw;
+}
     .wordBox {
         max-height: 70vw;
+        max-width: 40vw;
     }
+    
+    .finalWordBox {
+         max-height: 70vw;
+        max-width: 40vw;
+}
     .scrollWordsText {
         font-size: 2.5vw;
         letter-spacing: .1vw;
     }
     .container {
+        margin-top: -5%;
         margin-left: 10%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     .introduction {
         font-size: 2.5vw;
@@ -1026,6 +1038,29 @@ a {
     height: 125vw;  /* what pushes down the top banner */
 
 }
+    .nav li.active .nav__counter__chapter {
+    font-size: 2.5vw;  /* "chapter" word size, clicked on */
+
+}
+    .contact {
+    font-size: 1.5vw;
+    font-weight: 250;
+    letter-spacing: .1vw;
+    position: fixed;
+    margin-left: 20%;
+    bottom: 3vw;
+}
+    
+    @keyframes glowingShadow {
+  from {
+    transform: scale(1.7);
+  }
+
+  to {
+    transform: scale(0.65);
+  }
+}
+
 }
 
 
