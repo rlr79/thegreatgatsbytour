@@ -1008,7 +1008,8 @@ a {
         font-size: 5vw;
     }
     .card-body-locations {
-        width: 100%;
+        width: 120%;
+        margin-left: -8%;
     }
     
     .parallax__cover {
