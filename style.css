@@ -384,7 +384,7 @@ a {
 @keyframes glow {
 
   16.5% {
-    background-color: #fff;
+
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
   }
   33.3% {
@@ -399,7 +399,7 @@ a {
   66.6% {
     left: 109px;
     width: 0px;
-    background-color: #fff;
+
   }
 }
 
@@ -984,6 +984,44 @@ a {
 
 @media screen and (max-width: 700px) {
     
+    
+    
+        .frame {
+  visibility: hidden;
+        height: 105vw;
+        width: 70vw;
+}
+    
+    .introduction {
+        font-size: 2.9vw;
+        line-height: 4.5vw;
+    }
+    .introductionDivWords {
+       left: 5%;   
+        top: 5%;
+        max-width: 80%;
+    max-height: 70%;
+    }
+    .locationsWords {
+        margin-top: 10%;
+        font-size: 5vw;
+    }
+    .card-body-locations {
+        width: 95%;
+    }
+    
+    .parallax__cover {
+
+    height: 125vw;  /* what pushes down the top banner */
+
+}
+    
+    .titleBannerCityPart{
+    font-size: 3vw;
+    margin-top: -20px;
+        font-weight: 300;
+}
+    
     .smallDate {
     font-size: 2.5vw; 
 }
@@ -1015,29 +1053,7 @@ a {
         margin-left: 10%;
         margin-bottom: 5%;
     }
-    .introduction {
-        font-size: 2.5vw;
-    }
-    .frame {
-        height: 105vw;
-        width: 70vw;
-    }
-    .introductionDivWords {
-       left: 11.5%;   
-        top: 15%;
-    }
-    .locationsWords {
-        font-size: 3.2vw;
-    }
-    .card-body-locations {
-        width: 90%;
-    }
-    
-    .parallax__cover {
 
-    height: 125vw;  /* what pushes down the top banner */
-
-}
     .nav li.active .nav__counter__chapter {
     font-size: 2.5vw;  /* "chapter" word size, clicked on */
 
@@ -1061,10 +1077,10 @@ a {
   }
 }
     .parallax__layer__3 {  /* Lighthouse */
-  -webkit-transform: translateZ(-150px) scale(2.5);
-          transform: translateZ(-150px) scale(2.5);
-    margin-left: 22%; 
+    margin-left: 21%; 
 }
+    
+
 
 }
 
