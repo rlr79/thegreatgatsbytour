@@ -1202,6 +1202,12 @@ a {
     .card-body-scroll {
     margin-bottom: 3%;
 }
+    
+    .parallax__layer__6 { /* Grass */
+  -webkit-transform: translateZ(0px) scale(1);
+          transform: translateZ(0px) scale(1);
+width: 108%;
+}
 }
 
 
