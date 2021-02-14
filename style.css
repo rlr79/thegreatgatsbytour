@@ -301,6 +301,10 @@ span {
     width: 85vw;
 }
 
+.widenGrass {
+    width: 102vw;
+}
+
 .parallax__layer__0 {
   -webkit-transform: translateZ(-300px) scale(1);
           transform: translateZ(-300px) scale(1);
@@ -318,36 +322,40 @@ span {
 .parallax__layer__2 { /* House */
   -webkit-transform: translateZ(-200px) scale(3.1);
           transform: translateZ(-200px) scale(3.1);
-        margin-top: 110%;
-        display: block;
+        margin-top: 140%;
 }
 
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
-    margin-left: 15%; 
+    margin-left: 8%; 
+    margin-top: -95%;
 }
 
 .parallax__layer__4 { /* Water */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
-        margin-left: 0%;
-        margin-top: 139%;
+    position: absolute;
+        margin-top: 62%;
         max-width: 100%;
+    margin-left: -50%; 
 
 }
 
 .parallax__layer__5 { /* Pier */
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
-        margin-left: 13%;
-        margin-top: 80%;
+    position: absolute;
+        margin-left: -11%;
+        margin-top: 34%;
 }
 
 .parallax__layer__6 { /* Grass */
   -webkit-transform: translateZ(0px) scale(1);
           transform: translateZ(0px) scale(1);
-width: 102%;
+    position: absolute;
+    width: 102%;
+    margin-top: 33%;
 }
 
 a {
@@ -360,7 +368,7 @@ a {
     position: absolute;
     width: 100%;
     height: 85vw;  /* what pushes down the top banner */
-    margin-top: -10%;
+    margin-top: 20%;
 
 }
 
@@ -398,7 +406,6 @@ a {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
   }
   66.6% {
-    left: 109px;
     width: 0px;
 
   }
@@ -1034,7 +1041,7 @@ a {
     p {
         font-size: 2.1vw;
     }
-        .map {
+    .map {
     max-width: 40vw;
             max-height: 50vw;
 }
@@ -1102,7 +1109,11 @@ a {
   }
 }
     .parallax__layer__3 {  /* Lighthouse */
-    margin-left: 23%; 
+    margin-left: 16%; 
+}
+    
+    .parallax__layer__5 { /* Pier */
+        margin-left: -10%;
 }
     
 .nav li.active .nav__title {
