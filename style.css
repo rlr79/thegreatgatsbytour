@@ -394,7 +394,7 @@ a {
 
   16.5% {
 
-    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .8);
   }
   33.3% {
     left: 113px;
@@ -403,7 +403,7 @@ a {
     box-shadow: 0px 0px 15px 30px #d5ffcc;
   }
   50% {
-    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .8);
   }
   66.6% {
     width: 0px;
