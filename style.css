@@ -268,6 +268,9 @@ span {
 
 
 
+
+
+
 /* parallax ********************************************************************/
 
 .parallax {
@@ -367,7 +370,7 @@ a {
     display: block;
     position: absolute;
     width: 100%;
-    height: 85vw;  /* what pushes down the top banner */
+    height: 93vw;  /* what pushes down the top banner */
     margin-top: 20%;
 
 }
@@ -521,6 +524,105 @@ a {
 }
 
 
+
+
+
+
+
+
+
+
+
+/* Button ************************************/
+
+
+.main {
+  display: flex;
+margin-top: 20%;
+    margin-left: 6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  position: relative;
+  text-decoration: none;
+  padding: 0.5em;
+  box-shadow: inset 0 0 0 2px #FDFDFD;
+  text-align: center;
+    text-decoration:none;
+}
+.button__label {
+  display: block;
+  background-color: transparent;
+  color: #FDFDFD;
+  padding: 1.5em 2em;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+.button:hover .button__label, .button:focus .button__label {
+  color: #000;
+  background-color: rgba(200, 200, 200, 0.9);
+}
+.button__ornament {
+  position: absolute;
+}
+.button__ornament--vertical {
+  top: -0.5em;
+  bottom: -0.5em;
+  left: 0;
+  right: 0;
+}
+.button__ornament--horisontal {
+  left: -0.5em;
+  right: -0.5em;
+  top: 0;
+  bottom: 0;
+}
+.button__ornament-top-bottom, .button__ornament-left-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.button__ornament-top-bottom:before, .button__ornament-top-bottom:after, .button__ornament-left-right:before, .button__ornament-left-right:after {
+  content: "";
+  position: absolute;
+  background-color: #CBCBCB;
+  transition: transform 400ms cubic-bezier(0.54, 0.06, 0.39, 0.96);
+}
+.button__ornament-top-bottom:before, .button__ornament-top-bottom:after {
+  height: 1px;
+  left: 0;
+  right: 0;
+}
+.button__ornament-top-bottom:before {
+  top: 0;
+}
+.button__ornament-top-bottom:after {
+  bottom: 0;
+}
+.button__ornament-left-right:before, .button__ornament-left-right:after {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+}
+.button__ornament-left-right:before {
+  left: 0;
+}
+.button__ornament-left-right:after {
+  right: 0;
+}
+.button:hover .button__ornament-left-right:before, .button:hover .button__ornament-left-right:after, .button:focus .button__ornament-left-right:before, .button:focus .button__ornament-left-right:after {
+  transform: scale(1, 0);
+}
+.button:hover .button__ornament-top-bottom:before, .button:hover .button__ornament-top-bottom:after, .button:focus .button__ornament-top-bottom:before, .button:focus .button__ornament-top-bottom:after {
+  transform: scale(0, 1);
+}
 
 
 
@@ -1022,7 +1124,7 @@ a {
     
     .parallax__cover {
 
-    height: 125vw;  /* what pushes down the top banner */
+    height: 150vw;  /* what pushes down the top banner */
 
 }
     
@@ -1219,6 +1321,32 @@ a {
           transform: translateZ(0px) scale(1);
 width: 108%;
 }
+    
+    
+    
+    .button {
+  letter-spacing: 0.075em;
+  font-size: 1em;
+  box-shadow: inset 0 0 0 1px #FDFDFD;
+
+}
+    
+    .main {
+margin-top: 15%;
+    margin-left: 6%;
+}
+    
+    .button:hover .button__label, .button:focus .button__label {
+  color: #000;
+  background-color: rgba(200, 200, 200, 0.8);
+}
+    
+    .button__label {
+
+  padding: 1em 1em;
+
+}
+    
 }
 
 
