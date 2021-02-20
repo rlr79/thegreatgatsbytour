@@ -1124,7 +1124,7 @@ margin-top: 20%;
     
     .parallax__cover {
 
-    height: 180vw;  /* what pushes down the top banner */
+    height: 165vw;  /* what pushes down the top banner */
 
 }
     
@@ -1332,7 +1332,7 @@ width: 108%;
 }
     
     .main {
-margin-top: 30%;
+margin-top: 25%;
     margin-left: 6%;
 }
     
