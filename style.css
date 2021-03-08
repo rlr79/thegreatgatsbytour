@@ -1224,9 +1224,21 @@ margin-top: 20%;
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 16%; 
 }
+
+.parallax__layer__4 { /* Water */
+        margin-top: 68%;
+    }
     
     .parallax__layer__5 { /* Pier */
-        margin-left: -10%;
+       margin-top: 39%;
+    }
+    .parallax__layer__6 { /* Grass */
+    margin-top: 45%;
+}
+    
+    .parallax__cover {
+    margin-top: 30%;
+
 }
     
 .nav li.active .nav__title {
@@ -1325,12 +1337,6 @@ margin-top: 20%;
     
     .card-body-scroll {
     margin-bottom: 3%;
-}
-    
-    .parallax__layer__6 { /* Grass */
-  -webkit-transform: translateZ(0px) scale(1);
-          transform: translateZ(0px) scale(1);
-width: 108%;
 }
     
     
