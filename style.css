@@ -405,10 +405,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move1;
 }
 .firefly:nth-child(1)::before {
-  animation-duration: 14s;
+  animation-duration: 24s;
 }
 .firefly:nth-child(1)::after {
-  animation-duration: 14s, 10973ms;
+  animation-duration: 24s, 10973ms;
   animation-delay: 0ms, 1633ms;
 }
 
@@ -490,10 +490,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move2;
 }
 .firefly:nth-child(2)::before {
-  animation-duration: 15s;
+  animation-duration: 25s;
 }
 .firefly:nth-child(2)::after {
-  animation-duration: 15s, 7434ms;
+  animation-duration: 25s, 7434ms;
   animation-delay: 0ms, 1750ms;
 }
 
@@ -563,10 +563,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move3;
 }
 .firefly:nth-child(3)::before {
-  animation-duration: 16s;
+  animation-duration: 26s;
 }
 .firefly:nth-child(3)::after {
-  animation-duration: 16s, 7016ms;
+  animation-duration: 26s, 7016ms;
   animation-delay: 0ms, 5125ms;
 }
 
@@ -639,10 +639,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move4;
 }
 .firefly:nth-child(4)::before {
-  animation-duration: 15s;
+  animation-duration: 25s;
 }
 .firefly:nth-child(4)::after {
-  animation-duration: 15s, 6413ms;
+  animation-duration: 25s, 6413ms;
   animation-delay: 0ms, 2458ms;
 }
 
@@ -733,10 +733,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move5;
 }
 .firefly:nth-child(5)::before {
-  animation-duration: 12s;
+  animation-duration: 22s;
 }
 .firefly:nth-child(5)::after {
-  animation-duration: 12s, 5799ms;
+  animation-duration: 22s, 5799ms;
   animation-delay: 0ms, 2389ms;
 }
 
@@ -803,10 +803,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move6;
 }
 .firefly:nth-child(6)::before {
-  animation-duration: 9s;
+  animation-duration: 19s;
 }
 .firefly:nth-child(6)::after {
-  animation-duration: 9s, 9168ms;
+  animation-duration: 19s, 9168ms;
   animation-delay: 0ms, 2262ms;
 }
 
@@ -870,10 +870,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move7;
 }
 .firefly:nth-child(7)::before {
-  animation-duration: 18s;
+  animation-duration: 28s;
 }
 .firefly:nth-child(7)::after {
-  animation-duration: 18s, 5654ms;
+  animation-duration: 28s, 5654ms;
   animation-delay: 0ms, 2526ms;
 }
 
@@ -952,10 +952,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move8;
 }
 .firefly:nth-child(8)::before {
-  animation-duration: 16s;
+  animation-duration: 26s;
 }
 .firefly:nth-child(8)::after {
-  animation-duration: 16s, 10341ms;
+  animation-duration: 26s, 10341ms;
   animation-delay: 0ms, 5901ms;
 }
 
@@ -1034,10 +1034,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move9;
 }
 .firefly:nth-child(9)::before {
-  animation-duration: 15s;
+  animation-duration: 25s;
 }
 .firefly:nth-child(9)::after {
-  animation-duration: 15s, 7970ms;
+  animation-duration: 25s, 7970ms;
   animation-delay: 0ms, 710ms;
 }
 
@@ -1134,10 +1134,10 @@ p{ /* The words and spacing between groups of text */
   animation-name: move10;
 }
 .firefly:nth-child(10)::before {
-  animation-duration: 17s;
+  animation-duration: 27s;
 }
 .firefly:nth-child(10)::after {
-  animation-duration: 17s, 5743ms;
+  animation-duration: 27s, 5743ms;
   animation-delay: 0ms, 4345ms;
 }
 
