@@ -207,7 +207,7 @@ p{ /* The words and spacing between groups of text */
 }
 
 #layers:before {
-	animation: 10s linear 3s shooting-star infinite;
+	animation: 7.5s linear 2s shooting-star infinite;
 	background-image: url('http://imgur.com/ilhrli3.png');
 	background-size: 72px 50px;
 	content: ' ';
