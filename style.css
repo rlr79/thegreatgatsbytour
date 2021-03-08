@@ -3,8 +3,8 @@
 }
 
 body {
-    height: 100%;
-    background: radial-gradient(ellipse at top, #4c87aa, #00466d );
+    height: 50%;
+    background: radial-gradient(ellipse at top, #336a8b, #00466d );
     overflow-x: hidden;
 }
 
