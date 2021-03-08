@@ -1,124 +1,530 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-    height: 50%;
-    background: radial-gradient(ellipse at top, #336a8b, #00466d );
-    overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Great Gatsby Tour</title>
 
 
-p{ /* The words and spacing between groups of text */
-    margin-top: 1vw;
-    font-size: 1.3vw;
-}
-
-.cite { 
-    font-style: italic; /* Used to make itallic words */
-}
-
-.cite2 {
-    font-style: italic; /* Used to make green itallic words */
-    color: palegreen;
-}
-
-.contact { /* The fixed admin@thegreatgatsbytour.com contact information */
-    font-size: 1.1vw;
-    font-weight: 250;
-    letter-spacing: .1vw;
-    position: fixed;
-    margin-left: 25%;
-    bottom: 3vw;
-}
-
-
-
-
-
-
-
-/* Navigation Menu on the left******************************************/
-
-.nav__wrapper {
-    z-index: 1;
-    position: fixed;
-    height: 100%;
-    padding-left: 8%;
-    top: 5%;
-}
-
-.nav {
-}
-.nav__counter {
     
-    font-size: 3vw;
-    -webkit-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-}
-.nav__counter__chapter {
-    height: 0px;                /* moved the lines width*/
-    overflow: hidden;
+<link rel="stylesheet" href="./style.css">
 
-}
-.nav__title {
-    font-weight: 300;
-    margin-top: 1px;            /* moved the lines width*/
-    width: 10vw;                /* moved the words right*/
-    height: 0px;                /* moved the lines width*/
-    overflow: hidden;
-}
-.nav__body {
-    overflow: hidden;
-}
+    <!-- Introduction font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
 
-.nav li:after {
-    content: '';                /* makes the lines disappear */
-    border-left: 2px solid white;
-    border-top: 2px solid white;
-    height: 2550px;             /*Line height*/
-    width: 3vw;                 /* Line width */
-    position: absolute;
-    left: -4vw;                 /* move the chapter more right */
-    top: 15px;                  /* move ONLY lines up and down */
-}
-.nav li a {
-    top: -1vw;
-    display: block;
-    padding: 0;
-    color: #fff;                /* chapter number color */ 
-}
-.nav li a:hover {
-    background-color: transparent;
-    padding-left: 1em;          /* how far right the number goes on a hover */
-}
-.nav li a:focus {
-    background-color: transparent;      /* background behind clicked-on chapter */
-}
-.nav li.active {
-    pointer-events: none;
-    padding-left: 1vw;          /* how far the details are to the right when clicked on */
-}
-.nav li.active:after {
-    width: 4vw;                 /*length of line coming out when clicked on */ 
-    height: 300px;
-}
-.nav li.active .nav__counter {
-    font-size: 4vw;             /* clicked on chapter number size */
-}
+    <!-- Body text -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'><link rel="stylesheet" href="./style.css">
 
-.nav li.active .nav__counter__chapter {
-    font-size: 1.5vw;           /* "chapter" word size, clicked on */
-    font-weight: bold;
-    margin-bottom: 1vm;         /* distance above chapter number when clicked on */
-    overflow: visible;
-}
-.nav li.active .nav__title {
-    width: 4vw;                 /* chapter detail paragraph widths when clicked on */
-    margin-left: 3vw;
-    overflow: visible;
-    font-size: 1.8vw;
-}
+    <!-- Banners font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet"> 
+    <!-- Pamphlet Button font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">   
+        <link rel="stylesheet">
+
+    
+    
+    <!-- Navigation Menu -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'> 
+    
+    
+    <!-- Navigation Menu -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'><link rel="stylesheet" href="./style.css">
+    
+    
+    <!-- Navigation Menu -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+    
+    <!-- For mobile phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJZ49TBGPN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EJZ49TBGPN');
+</script>
+</head>
+
+    
+    
+    
+    
+    
+<body>
+    
+    
+    
+    <!-- Navigation Menu ---------------------------------------------------->
+    
+<body data-spy="scroll">
+
+  <div class="wrapper" >
+
+    <nav class="nav__wrapper" >
+      <ul class="nav">
+
+        <li role="presentation">
+          <a href="#titleBanner1">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>01</span>
+            <h3 class="nav__title">Introducing Nick</h3>
+          </a>
+        </li>
+
+        <li role="presentation">
+          <a href="#titleBanner2">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>02</span>
+            <h3 class="nav__title">Moving to New York</h3>
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a href="#titleBanner3">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>03</span>
+            <h3 class="nav__title">Meeting Gatsby</h3>
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a href="#titleBanner4">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>04</span>
+            <h3 class="nav__title">Gatsby and Daisy</h3>
+          </a>
+        </li>
+        
+        <li role="presentation">
+          <a href="#titleBanner5">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>05</span>
+            <h3 class="nav__title">Reuniting</h3>
+          </a>
+        </li>
+          
+           <li role="presentation">
+          <a href="#titleBanner6">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>06</span>
+            <h3 class="nav__title">You Can't Repeat the Past</h3>
+          </a>
+        </li>
+          
+            <li role="presentation">
+          <a href="#titleBanner7">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>07</span>
+            <h3 class="nav__title">Confrontation</h3>
+          </a>
+        </li>
+          
+            <li role="presentation">
+          <a href="#titleBanner8">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>08</span>
+            <h3 class="nav__title">Death</h3>
+          </a>
+        </li>
+          
+            <li role="presentation">
+          <a href="#titleBanner9">
+            <span class="nav__counter"><h3 class="nav__counter__chapter">Chapter</h3>09</span>
+            <h3 class="nav__title">The Funeral</h3>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    
+    
+      
+      
+      <!-- stars -------------------------------------------------------------------->
+<div id="layers">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+      
+    
+      
+      
+     <!-- Title --------------------------------------------------------------------> 
+      <div id='title'>
+      <span>
+          <img class = GatsbyTitle src="HeaderPhotos/title.png" /><br>
+            by Francis Scott Fitzgerald
+      </span>
+      </div>
+    
+    
+      
+      
+      
+<!-- parallax  ------------------------------------------------------------------->
+      
+<div class="parallax">
+    
+    <div class="parallax__layer parallax__layer__0">
+    </div>
+    
+    
+    <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
+    <div class="parallax__layer parallax__layer__1"> <!-- Moon -->
+        <img class = "moonWiden" src="HeaderPhotos/moon.png" />
+    </div>
+    
+ <a href="https://www.vecteezy.com/vector-art/150624-boardwalk-vector-background-illustration">
+    <div class="parallax__layer parallax__layer__2"> <!-- House -->
+  <img class = "parallaxWiden" src="HeaderPhotos/mansion1.png" />
+    </div></a>
+    
+<div class="parallax__layer parallax__layer__3">
+        <div class="lighthouse">
+          
+          <div class="lightAnimation"></div>
+        </div>
+    </div>
+    
+    <div class="parallax__layer parallax__layer__4"> <!-- Water -->
+       <img class = "parallaxWiden" src="HeaderPhotos/water.png" />
+    </div>
+    
+   <div class="parallax__layer parallax__layer__5"> <!-- Pier -->
+      <img class = "widenPier" src="HeaderPhotos/pier.png" />
+    </div>
+    
+     <div class="parallax__layer parallax__layer__6"> <!-- Grass -->
+     <img class = "widenGrass" src="HeaderPhotos/grass1.png" />
+    </div>
+    <a href="https://www.vecteezy.com/free-vector/sea-oats">Sea Oats Vectors by Vecteezy</a>
+    <a href="https://www.vecteezy.com/free-vector/port">Port Vectors by Vecteezy</a>
+    <a href="https://www.vecteezy.com/free-vector/art-deco-dividers">Art Deco Dividers Vectors by Vecteezy</a>
+    
+    
+    
+    
+    <!-- Parallax coverdiv ------------------------------------------------------------------>
+    
+    <div class="parallax__cover">
+        
+        <div class = "introductionDivFrame">
+                    <img class = "frame" src="HeaderPhotos/frame.png"/>
+            
+            <div class = "introductionDivWords">    
+                <div class = "introduction" >
+                    
+                In 1919, Francis Scott Fitzgerald moved to New York City to pursue a career in writing. However, after having his work endlessly rejected, he returned to his family's home in Minnesota and revised his draft of <cite class = "cite">This Side of Paradise</cite> while repairing the roofs of cars. The final draft was accepted for publishing in the fall of 1919, sold in March of 1920, and instantly became a profitable success.</div>
+                
+                <div class = "introduction">Five years later, in 1925, <cite class = "cite2">The Great Gatsby</cite> was published and received little attention. It was heavily inspired by Scott Fitzgerald’s own life, the pursuit of his spouse - Zelda, his financial ambitions, and his time living in New York City and Great Neck, Long Island. It was not until World War II - after Scott had already passed away - that the novel became popular and was considered a literary classic.</div>
+                
+                <div class = "introduction">This website hopes to breathe life into the story by mapping out the real-world locations that Scott was inspired by.</div>
+                    
+
+                    <div class="card-body-locations">
+                      <div class="locationWordsText"><p><div class = "locationsWords">Scroll down for the locations</div></p></div>
+
+                      <div class="locationWordsText text-glow"><p><div class = "locationsWords">Scroll down for the locations</div></p></div>
+                    </div>                    
+            </div> 
+    </div>
+
+      
+      
+      
+      <!-- Button ------------------------------------------>
+<main class="main">
+	
+	<a class="button" href="Pamphlet.pdf" target="_blank">
+		<div class="button__ornament button__ornament--vertical">
+			<div class="button__ornament-top-bottom"></div>
+			<div class="button__ornament-left-right"></div>
+		</div>
+		
+		<div class="button__ornament button__ornament--horisontal">
+			<div class="button__ornament-top-bottom"></div>
+			<div class="button__ornament-left-right"></div>
+		</div>
+		
+		<span class="button__label">Click HERE for a PDF Pamphlet of the locations.</span>
+	</a>
+
+</main>
+    </div> <!-- Parallax coverdiv -->
+    
+</div> <!-- Parallax div -->
+    
+    
+        <!-- Contact Information ---------------------------------------------->
+
+      <div class = "contact">To contact Rachael Reitano (the site creator) email    admin@thegreatgatsbytour.com</div>
+         
+      
+      
+      
+      <!-- Sections and Title/Location Banners ---------------------------------------------->
+      
+      <div class = "sectionDiv">
+      
+      <div class = "sections">
+      
+      
+      <!-- Section 1 ---------------------------------------------------------------------->
+          
+          
+      
+       <div class = "titleBanners" id = "titleBanner1">
+        <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>The Midwest</strong></div><br>
+            <div class = "titleBannerCityPart">Saint Paul, Minnesota</div></p>
+        </div>
+      </div>
+    
+      
+    <section class="section, section1" id="section1">  
+        <div class = "row">
+        <div class = "grouping">
+    
+            <img class = "map" title="Saint Paul, Minnesota" src="Steps/SaintPaul.jpg" alt="A map of the USA, with Saint Paul, Minnesota highlighted." />
+            <div class = "wordBox"> 
+                <div class = "step">Introduction<div class = "smallDate">1915 - 1918</div></div>
+                <p>The novel begins by introducing Nick Carraway, whose family has lived in Minnesota for 3 generations.</p><p>In 1915, after graduating from his father's alma mater - Yale - at the age of 22, Nick immediately went overseas to fight in World War 1. After returning from the war in 1918, at the age of 25, he soon hopes to move east and join his friends, who work in the Financial District of New York City as bond brokers.</p>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+            
+        <div class = "titleBanners" id = "titleBanner1b" style="background-image: url('sectionPhotos/skyline2.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>New York City</strong></div><br>
+              <div class = "titleBannerCityPart"></div></p>
+          </div>
+        </div>
+        
+    <section class="section, section1" id="section1">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+            <img class = "map" title="Train route from Saint Paul, Minnesota to Chicago, then New York City" src="Steps/SaintPtoNYC.jpg" alt="A map of USA, showing the train route from Saint Paul, Minnesota to New York City, with one stop in Chicago, Illinois." />
+            <div class = "wordBox">
+                <div class = "step">1<div class = "smallDate">Spring,1922</div></div>
+                <p>Nick moves to New York City three years later, at the age of 29, and makes a brief stop in Chicago while on the way.</p>
+                
+            </div>
+        </div>
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="The Financial District - Manhattan, NY" src="Steps/bigFinancialDist.jpg" alt="A map Manhattan, New York with the Financial District highlighted." />
+            <div class = "wordBox">
+                <div class = "step">2<div class = "smallDate">Spring,1922</div></div>
+                <p>In New York City, Nick works at a fictional brokerage firm named <cite class = "cite">Probity Trust</cite> within lower Manhattan's Financial District.</p><p>While working, he begins dating a young woman who commutes to the firm from Jersey City, though the relationship ends within weeks.</p>
+            </div>
+        </div> 
+        
+        <div class = "grouping"> 
+
+            <img class = "map" title="5th Avenue - Manhattan, NY" src="Steps/FifthAve.jpg" alt="A map of Manhattan, New York with Fifth Avenue highlighted." />
+            <div class = "wordBox">
+                <div class = "step">3<div class = "smallDate">Spring,1922</div></div>
+                <p>Nick describes regularly walking up 5th Avenue and admiring the beautiful women of the city while he travels around after work.</p>
+            </div>
+        </div>
+        
+        <div class = "grouping"> 
+
+            <img class = "map" title="The Yale Club to Penn Station" src="Steps/YaleClub.jpg" alt="A map of Manhattan, New York with the the Yale Club and Penn Station highlighted" />
+            <div class = "wordBox">
+                <div class = "step">4<div class = "smallDate">Spring,1922</div></div>
+                <p>At night, Nick eats his dinners at the Yale Club, then uses the club's library to study for one hour before ending his work days.</p><p>To go home, he walks down Madison Avenue, past the old Murray Hill Hotel, turns on 33rd Street, and commutes through Pennsylvania Station.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+            
+            
+    <div class = "titleBanners" id = "titleBanner1c" style="background-image: url('sectionPhotos/seagrass.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>King's Point<br>(Long Island, NY)</strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+          </div>
+    </div>
+               
+    <section class="section, section1" id="section1">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+            <img class = "map" title="The Financial Distract and Great Neck, Long Island - Greater New York City" src="Steps/GreaterNYCWestEgg.jpg" alt="A map of Greater New York City, with the Financial District in Manhattan and King's Point of Long Island highlighted." />
+            <div class = "wordBox">
+                
+                <div class = "step">5<div class = "smallDate">Spring, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                    <p>Not long after arriving to New York, a coworker asks Nick to room together at a commuting town 20 miles east of the city: West Egg – a fictional town which represents King’s Point in Great Neck, Long Island. West Egg is described as the preferred neighborhood for people associated with "New Money" - or newly acquired wealth. The homes and people here are more eccentric than classic or formal.</p><p>Nick agrees to move to West Egg, however the roommate is sent to Washington instead, leaving Nick to move in by himself. He moves in with an old Dodge automobile, a pet dog that soon runs away, and hires a Finnish maid who regularly comes to tidy his room and cook his breakfast.</p><p>Nick’s rental home is described as being on tip of West egg, a short 50 yards away from the Long Island Sound, with a direct view of the water. It includes a shed which he uses to park his car, and the property is situated between two giant homes.</p><p>The house on the right is Gatsby’s home.</p>
+            </div>
+        </div>
+          
+          
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">6<div class = "smallDate">Spring, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                    <p>Gatsby's home is styled after the Hotel de Ville of Normandy.</p><p>It includes a single tower, raw ivy growing up the walls, a marble swimming pool, a private beach with a floating diving tower, a pebbled driveway, Marie Antoinette music rooms, imported and restored salons and period bedrooms,  multiple dressing rooms, various game rooms, a fully-stocked bar, and forty acres of lawn and gardens that included jonquils, hawthorns, plum blossoms, a white plum tree, and midsummer flowers.</p><p>On the weekends, Gatsby’s Rolls-Royce commutes people to and from the city from nine in the morning until well after midnight, to attend his exuberant parties. Gatsby’s yellow station wagon also drives people to and from the local train station.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+          
+    <div class = "titleBanners" id = "titleBanner1d" style="background-image: url('sectionPhotos/seagrass2.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>Sands Point<br>Long Island, NY </strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: East Egg</div></p>
+          </div>
+    </div>
+      
+    <section class="section, section1" id="section1">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+         <img class = "map" title="Driving route from King's Point to Sands Point." src="Steps/DriveWesttoEast.jpg" alt="A map of Long Island, New York that shows the driving route from King's Point to Sands Point." />
+        <div class = "wordBox">
+            <div class = "step">7<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+            <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+            </div>    
+                <p>After getting situated in his new home, Nick drives to visit Daisy and Tom Buchanan for dinner. Daisy is Nick’s second cousin, and she is married to Tom, who played football at Yale and was also in the same senior society as Nick.</p><p>Tom and Daisy live just across the bay from Nick, at East Egg – which is a fictional town for Sands Point. East Egg is described as the preferred neighborhood for people associated with "Old Money" - or wealth that was generationally inherited. East Egg has a more classic and regal style of architecture.</p><p>The Buchanan home is a red and white Georgian Colonial mansion with vines growing on the side, gold-framed front French windows, a front porch, connecting verandas, and a lawn that runs a quarter mile from the beach to the door, filled with  sun-dials, brick walkways, and gardens. There is also a dock that goes into the water from the beach, with a flashing green light that shines all day and night.</p><p>At the Buchanan home, Nick learns of Tom’s poorly-hidden affair with another woman, discusses their three-year-old daughter (who is not yet named), and also meets Jordan Baker - a childhood friend of Daisy’s who also lives in the house.</p><p>Some information on Tom and Daisy’s past is also explored, and Tom begins to state his blatantly racist opinions, which infers that he aggressively sees himself above others.</p><p>Tom's outburst also shows his insecurity about the rise of others who are considered outside of "Old Money" in the USA, which makes him feel that the comfort once guaranteed to “Old Money” is now in jeopardy. This scene also reflects that “Old Money” can hypocritical, hiding hatred and corruption behind a veneer of taste and manners. </p><p>After 10pm, Jordan retires for the night, and Daisy quickly inquiries about a woman Nick is romantically involved with back in Missouri before he leaves to return home.</p>
+        </div>
+        </div> 
+        </div>
+    </section>
+      
+
+
+           
+    <!-- Section 2 ---------------------------------------------------------->
+
+
+    
+    
+       <div class = "titleBanners" id = "titleBanner2" style="background-image: url('sectionPhotos/smoke.jpg');">
+          <div class = titleBannerContents>
+      <p><div class = "titleBannerCity"><strong>Flushing Meadows<br>(Queens, NY)</strong></div><br>
+          <div class = "titleBannerCityPart"></div></p>
+          </div>
+      </div>
+
+    <section class="section, section2" id="section2">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+            <img class = "map" title="TODAY: Flushing Meadows Corona Park. 1922 - The Corona Dumps" src="Steps/Valley.jpg" alt="A map that highlights Flushing Meadows Corona Park in Queens, New York." />
+            <div class = "wordBox">
+                <div class = "step">8<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>Between Nick's home and New York City is a location referred to as the Valley of the Ashes. At the time, this location was a dump site for garbage and ashes collected from the city.</p><p>The area was filled with ridges, hills, chimneys, smoke, and a billboard that advertised an optometrist’s practice in nearby Queens. There was also a river with a drawbridge that would often delay the trains and traffic, and a single yellow-bricked building that stood on the edge of the town. The building housed three shops, one of which was a garage called "Repairs. GEORGE B. WILSON. Cars Bought and Sold".</p>
+            </div>
+        </div>
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="Great Neck Train Station to Flushing Meadows Park " src="Steps/TrainWestEggtoValley.jpg" alt="A map of the train route from Great Neck Train Station to Flushing Meadows Corona Park." />
+            <div class = "wordBox">
+                <div class = "step">9<div class = "smallDate">July 2nd, 1922</div></div>
+                <p>One afternoon, on the Sunday before the Fourth of July, Tom and Nick take a train into the city and disembark while the drawbridge is up.</p>
+            </div>
+        </div> 
+            
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="TODAY: Flushing Meadows Corona Park. 1922 - The Corona Dumps" src="Steps/GarageWaiting.jpg" alt="A map that highlights Flushing Meadows Corona Park in Queens, New York." />
+            <div class = "wordBox">
+                <div class = "step">10<div class = "smallDate">July 2nd, 1922</div></div>
+                <p>Tom and Nick hop over a low, white-washed railroad fence and walk a hundred yards along the main street towards the garage.</p><p>At the garage, Nick meets the woman Tom is having an affair with, Myrtle, and her husband, George.<p>Tom tells Myrtle to get onto the next train and join them in the city.</p><p>Nick and Tom then wait for the next train down the street.</p>
+            </div>
+        </div> 
+            
+            
+        
+            </section>
+            
+            
+        <div class = "titleBanners" id = "titleBanner2b" style="background-image: url('sectionPhotos/skyline1.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>New York City</strong></div><br>
+            <div class = "titleBannerCityPart"></div></p>
+          </div>
+        </div>
+            
+    <section class="section, section2" id="section2">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+            <img class = "map" title="Train from Flushing Meadows Park to Pennsylvania Station in Manhattan" src="Steps/TrainNYCtoValley.jpg" alt="A map that shows the train route from Flushing Meadows Corona Park in Queens, New York to Pennsylvania Station in Manhattan." />
+            <div class = "wordBox">
+                <div class = "step">11<div class = "smallDate">July 2nd, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>Nick, Tom, and Myrtle take the next delayed train into the city.</p><p>At Pennsylvania Station, Myrtle has Tom buy her cold cream and perfume within the station’s drug-store, and a magazine at a newsstand.</p><p>The group then goes out into the street and waits for a newer taxi - one that is lavender with grey interior.</p><p>Before diving off, Myrtle also has Tom buy her a dog from a person selling puppies nearby.</p>
+            </div>
+        </div> 
+            
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="Pennsylvania Station to 158th Street in Hamilton Heights by taxi." src="Steps/Pennto158th.jpg" alt="A map of Manhattan that shows the driving route from Pennsylvania Station to 158th Street in Hamilton Heights." />
+            <div class = "wordBox">
+                <div class = "step">12<div class = "smallDate">July 2nd, 1922</div></div>
+                <p>The taxi drives to 5th Avenue, then veers to Park Avenue before heading north to the Upper West Side.</p><p>At 158th Street, the taxi arrives at a line of white apartment houses. Inside, an elevator boy takes Nick, Tom, and Myrtle to top floor apartment.</p>
+            </div>
+        </div> 
+            
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="158th Street - Hamilton Heights, Manhattan." src="Steps/158th.jpg" alt="A map of Manhattan that highlights 158th Street in Hamilton Heights." />
+            <div class = "wordBox">
+                <div class = "step">13<div class = "smallDate">July 2nd, 1922</div></div>
+                  <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>  
+                <p>Nick begins to drink in the apartment at 8pm as others arrive by invitation from Myrtle. He also goes to corner store to buy cigarettes not long after arriving.</p><p>When Nick returns to the apartment, Tom eventually becomes enraged with Myrtle as she mentions Daisy's name and brutally hits her.</p><p>While Tom prides himself on his family and manners, he is cruel to those who are not associated with "Old Money". This reveals his hypocrasy: that he far from being either gentlemanly or loyal, but is instead agressive and disloyal in his marriage.</p>
+            </div>
+        </div> 
+            
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="158th Street in Hamilton Heights to Pennsylvania Station by walking down Broadway." src="Steps/BroadwaytoPenn.jpg" alt="A map of Manhattan than shows the route from 158th Street in Hamilton Heights to Pennsymvania Station by Broadway Avenue." />
+            <div class = "wordBox">
+                <div class = "step">14<div class = "smallDate">July 2nd, 1922</div></div>
+                <p>In the early morning, Nick leaves with a neighbor who lives in the apartment just below. He then exits the building alone and walks south along Broadway.</p><p>Eventually, he arrives at Pennsylvania Station and waits for the 4AM train to go home to Long Island.</p>
+            </div>
+        </div>      
+        </div>
+    </section>
 
 
 
@@ -126,1268 +532,613 @@ p{ /* The words and spacing between groups of text */
 
 
 
+      
+    <!-- Section 3 ---------------------------------------------------------------->
+
+
+    
+  <div class = "titleBanners" id = "titleBanner3" style="background-image: url('sectionPhotos/stoneSteps.jpg');">
+          <div class = titleBannerContents>
+      <p><div class = "titleBannerCity"><strong>King's Point</strong></div><br>
+          <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+          </div>
+      </div>
+      
+      
+      
+    <section class="section, section3" id="section3">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">15<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                  <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>One summer day, Nick receives a formal invitation to attend one of Gatsby’s parties. On the night of the event, Nick crosses the lawn and attempts to locate Gatsby, but fails.</p><p>After becoming embarrassed by coming to a party alone, Nick runs into Jordan Baker and joins her company before they try to search for Gatsby together, after she abandons her date to join Nick.</p><p>After encountering a random party guest within the home's library who is admiring the room's books, Nick is finally found by Jay Gatsby himself.</p><p>Gatsby introduces himself and invites Nick to meet again the following morning. He then speaks with Jordan privately for an hour.</p><p>At 2AM, Jordan emerges from her conversation with Gatsby and says goodbye to Nick. Nick then says goodbye to Gatsby, and crosses the lawn to return home.</p>
+            </div>
+        </div>
+        
+        <div class = "grouping"> 
+
+            <img class = "map" title="Warwick, New York" src="Steps/Warwick.jpg" alt="A map of New York that highlights the town of Warwick." />
+            <div class = "wordBox">
+                <div class = "step">16<div class = "smallDate">Summer, 1922</div></div>
+                <p>Nick losses contact with Jordan for some weeks while he begins to reulargly visit Gatsby's. However, Nick and Jordan reconnect mid-summer, after running into one another at a house party in Warwick.</p><p>They leave from the party together, but Nick refrains from flirting any further until he ends his relationship with the girl he left behind in Missouri, whom he still writes to romantically - this revealing that Nick is not as honest as he believes himself to be.</p>
+            </div>
+        </div>  
+        </div>
+    </section>
+    
+    
+
+
+ <!-- Section 4 ------------------------------------------------------------------->
 
 
 
-/* stars *************************************************************/
+      
+      <div class = "titleBanners" id = "titleBanner4" style="background-image: url('sectionPhotos/skyline3.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>New York City</strong></div><br>
+            <div class = "titleBannerCityPart"></div></p>
+          </div>
+      </div>
+      
 
-#layers {
-}
+      
+    <section class="section, section4" id="section4">  
+        <div class = "row">
+        <div class = "grouping"> 
 
-#layers .layer {
-	background-size: auto 100%;
-	background-repeat: repeat-x;
-	height: 40vw;
-	position: absolute;
-	transform: translate3d(0, 0, 0);
-	width: 200vw;
-    overflow-x:hidden;
-    z-index: -1;  /* This makes it go behind the cover */
-}
+            <img class = "map" title="Driving route from King's Point, Long Island to Midtown, Manhattan" src="Steps/DriveWestEggtoNYC.jpg" alt="A map of Greater New York City that highlights the driving route from King's Points, Long Island to Midtown, Manhattan." />
+            <div class = "wordBox">  
+                <div class = "step">17<div class = "smallDate">Summer, 1922</div></div>
+                      <div class="card-body-scroll">
+                  <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div> 
+                <p>One morning, Gatsby drives Nick into the city to have lunch together. During the ride, he begins to tell Nick a glamorized version of his past.</p><p>Nick is reluctant to believe Gatsby's explanations, however begins to wonder if everything is true after being shown with a medal that Gatsby received for fighting in the War. Nick wonders if Gatsby truely is a self-made man who resulted from gaining wealth and rewards by being a war hero.</p><p>During their conversation, Gatsby and Nick drive past a seaside port, cobbled slums, abandoned saloons from the 1900s, the Valley of Ashes, Mr. Wilson’s gas station, and are stopped by police halfway through Astoria for speeding.</p><p>When pulled over in Astoria, Gatby flashes his business card and the police officer refrains from giving a ticket. This shows that Gatsby sees himself as above the law.</p><p>After the encounter, Gatsby continuines over the Queensboro bridge and crosses Blackwell’s Island - which is called "Roosevelt Island" today - into New York City.</p>
+            </div>
+        </div>
+            
+       <div class = "grouping"> 
 
-@keyframes twinkle {
-	from { opacity: .3; }
-	to { opacity: 1; }
-}
+            <img class = "map" title="TODAY: One Times Square (a skyscraper) - Midtown, Manhattan. 1922 - The Metropole Hotel." src="Steps/Metropole.jpg" alt="A map of Manhattan that highlights the location of One Time Square." />
+            <div class = "wordBox">
+                <div class = "step">18<div class = "smallDate">Summer, 1922</div></div>
+                <p>At noon, Gatsby and Nick arrive at a well-fanned, 42nd street cellar, which stands across the street from the Hotel Metropole - which is demolished today and replaced with the Times Square Tower.</p><p> Over lunch, Nick meets Meyer Wolfsheim and learn some details from Gatsby about Wolfsheim's criminal past.</p><p>Gatsby is business partners with Wolfsheim.</p>
+            </div>
+        </div>    
+            
+       <div class = "grouping"> 
 
-@keyframes layer-1 {
-	from { transform: translate3d(0, 0, 0); }
-	to { transform: translate3d(-689px, 0, 0); }
-}
-#layers .layer:nth-child(1) {
-	animation: twinkle 10s ease-in -5s infinite alternate, layer-1 344s linear infinite;
-	background-image: url('http://imgur.com/9beLKl9.png');
-}
+            <img class = "map" title="The Plaza Hotel - Midtown, Manhattan" src="Steps/Plaza.jpg" alt="A map of Manhattan that highlights the location of the Plaza Motel." />
+            <div class = "wordBox">
+                <div class = "step">19<div class = "smallDate">Summer, 1922</div></div>
+                <p>In the afternoon, Nick separates from Gatsby and meets with Jordan at the Plaza Hotel’s tea garden. Here, he learns that Daisy and Gatsby had once had a past romantic relationship together, five years earlier back in Louisville, Kentucky - which is Daisy and Jordan's hometown.</p><p>At the party, Gatsby had also confided in Jordan that he is still in love with Daisy.</p>
+            </div>
+        </div>   
+                
+       <div class = "grouping"> 
 
-@keyframes layer-2 {
-	from { transform: translate3d(0, 0, 0); }
-	to { transform: translate3d(-699px, 0, 0); }
-}
-#layers .layer:nth-child(2) {
-	animation: twinkle 3s ease-in -3s infinite alternate, layer-2 349s linear infinite;
-	background-image: url('http://imgur.com/46MRYFa.png');
-}
-
-@keyframes layer-3 {
-	from { transform: translate3d(0, 0, 0); }
-	to { transform: translate3d(-699px, 0, 0); }
-}
-#layers .layer:nth-child(3) {
-	animation: twinkle 3.5s ease-in infinite alternate, layer-3 349s linear infinite;
-	background-image: url('http://imgur.com/46MRYFa.png');
-}
-
-@keyframes layer-4 {
-	from { transform: translate3d(0, 0, 0); }
-	to { transform: translate3d(-480px, 0, 0); }
-}
-#layers .layer:nth-child(4) {
-	animation: twinkle 4s ease-in -2s infinite alternate, layer-4 240s linear infinite;
-	background-image: url('http://imgur.com/BqkETyl.png');
-}
-
-@keyframes layer-5 {
-	from { transform: translate3d(0, 0, 0); }
-	to { transform: translate3d(-486px, 0, 0); }
-}
-#layers .layer:nth-child(5) {
-	animation: twinkle 5.5s ease-in infinite alternate, layer-5 243s linear infinite;
-	background-image: url('http://imgur.com/x1GB77K.png');
-}
-
-@keyframes shooting-star {
-	0% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-	10%, 100% {
-		opacity: 0;
-        transform: translate3d(-270px, 180px, 0);
-	}
-}
-
-#layers:before {
-	animation: 10s linear 3s shooting-star infinite;
-	background-image: url('http://imgur.com/ilhrli3.png');
-	background-size: 72px 50px;
-	content: ' ';
-	height: 50px;
-	left: 80%;
-	position: absolute;
-	top: -50px;
-	width: 72px;
-	z-index: -1; /* This makes the star behind the cover */
-}
+            <img class = "map" title="Central Park - New York City" src="Steps/CentralPark.jpg" alt="A map of Manhattan that highlights a driving route through Central Park." />
+            <div class = "wordBox">
+                <div class = "step">20<div class = "smallDate">Summer, 1922</div></div>
+                <p>After leaving the Plaza Hotel, Nick and Jordan spend 30 minutes driving through Central Park in an old Victoria during sundown.</p><p>Near the end of the drive, Nick finally kisses Jordan.</p>
+            </div>
+        </div>  
+        </div>
+    </section>
+      
 
 
+      
 
-
-
-
-
-
-
-/* "The Great Gatsby" Parallax Title Words **************************************************/
-
-
-#title {
-    position: absolute;
-    margin-top: 20vw;
-    width: 60vw;
-    margin-left: 10vw;
-    font-size:  1.9vw;
-    font-family: "lato", sans-serif;
-    text-align: center;
-    color: #FFF;
-    letter-spacing: .9vw;
-}
-
-#title span {
-  background: -webkit-linear-gradient(white, #7692af);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.GatsbyTitle {
-   width: 50vw;
-}
+        <!-- Section 5 --------------------------------------------------------------->
 
 
 
 
 
+        <div class = "titleBanners" id = "titleBanner5" style="background-image: url('sectionPhotos/plumFlowers.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>King's Point</strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+          </div>
+        </div>
+      
 
+    <section class="section, section5" id="section5">  
+        <div class = "row">
+       <div class = "grouping"> 
 
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">21<div class = "smallDate">Summer, 1922</div></div>
+                  <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>  
+                <p>Nick returns to Long Island after his day in the city with Gatsby and Jordan.</p><p>At home, Gatsby intercepts him as he arrives, and invites Nick to Coney Island while offering him a job, however Nick says no to all offers. Though, Nick agrees to invite Daisy over for tea in two days, giving Gatsby the opportunity to reconnect with her - which is Gatsby's true dream and intention.</p><p>This scene is imporant since it also reveals Gatsby's "New Money" habit of networking and offering Nick money and compensation, instead of simply thanking Nick from his help and friendship.</p>
+            </div>
+        </div>
+            
+       <div class = "grouping"> 
 
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+               <div class = "step">22<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                    <p>It is a sporadically rainy day when Daisy comes for tea.</p><p>At 11am, Nick’s grass is cut while he goes to town for cups, lemons, and flowers.</p><p>At 2pm, an excessive variety of flowers arrive from Gatsby’s arrangements.</p><p>At 3pm Gatsby anxiously arrives.</p><p>At 4pm, Daisy arrives and tells her driver to return in an hour.</p><p>Upon entering, Daisy is surprised to see Gatsby. Then, after 30 uncomfortable minutes, Nick leaves the two alone for half an hour by exiting through the back door. The rain subsides during this time, though the wind and thunder remain.</p>
+            </div>
+        </div>    
+            
+       <div class = "grouping"> 
 
-
-
-
-
-
-
-
-
-
-/* parallax ********************************************************************/
-
-.parallax {
-  -webkit-perspective: 100px;
-          perspective: 100px;
-    height: 115vw;    /* The size/length of the Parallax window ITSELF */
-    overflow-x:hidden;
-    overflow-y: auto; 
-    position: absolute;
-    width: 100%;
-    border-bottom: 1vw solid #1a1a1a; 
-}
-
-.parallax__layer img {    /* Keeps everything level horizontally */
-    display: block;
-    position: absolute;
-     bottom: 0;
-}
-
-
-.parallaxWiden {
-    width: 100vw;
-}
-
-.moonWiden {
-    width: 10vw;
-}
-
-.widenPier {
-    width: 85vw;
-}
-
-.widenGrass {
-    width: 102vw;
-}
-
-.parallax__layer__0 {
-  -webkit-transform: translateZ(-300px) scale(1);
-          transform: translateZ(-300px) scale(1);
-        max-width: 100%;
-        height: 10vw;
-}
-
-.parallax__layer__1 { /* Moon */
-  -webkit-transform: translateZ(-250px) scale(3.5);
-          transform: translateZ(-250px) scale(3.5);
-        margin-left: 120vw;
-        margin-top: -60%;
-}
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">23<div class = "smallDate">Summer, 1922</div></div>
+                  <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>  
+                <p>When Nick returns, Gatsby and Daisy have become comfortably reacquainted, and all three go to Gatsby’s home.</p><p>They explore the home together, and Gatsby points out the green light that shines all night at the end of Daisy’s dock. The light is one of numerous gold and green symbols that surround Daisy, all of which symbolize her ties and connection to "Old Money" and enormous wealth.</p><p>During the tour, Daisy breaks down and begins to cry in Gatsby's room while looking through his collection of luxusious shirts. This can either be her realization that Gatsby could have given her the life she had wanted, or she is realizing that she is truly in love with money instead of the person who holds the wealth.</p><p>After this night, Gatsby tells Nick a little more about his past. It becomes evident that Gatsby has acheived the 'American Dream' by becoming rich. However, to achieve the dream, he had to reinvent himself, leave his home, and adjust to those around him as needed.</p><p>Though, it is clear that all of his efforts are for a more pure outcome: his love for Daisy.</p>
+            </div>
+        </div>   
  
-.parallax__layer__2 { /* House */
-  -webkit-transform: translateZ(-200px) scale(3.1);
-          transform: translateZ(-200px) scale(3.1);
-        margin-top: 140%;
-}
-
-.parallax__layer__3 {  /* Lighthouse */
-  -webkit-transform: translateZ(-150px) scale(2.5);
-          transform: translateZ(-150px) scale(2.5);
-    margin-left: 8%; 
-    margin-top: -95%;
-}
-
-.parallax__layer__4 { /* Water */
-  -webkit-transform: translateZ(-100px) scale(2);
-          transform: translateZ(-100px) scale(2);
-    position: absolute;
-        margin-top: 62%;
-        max-width: 100%;
-    margin-left: -50%; 
-
-}
-
-.parallax__layer__5 { /* Pier */
-  -webkit-transform: translateZ(-50px) scale(1.5);
-          transform: translateZ(-50px) scale(1.5);
-    position: absolute;
-        margin-left: -11%;
-        margin-top: 34%;
-}
-
-.parallax__layer__6 { /* Grass */
-  -webkit-transform: translateZ(0px) scale(1);
-          transform: translateZ(0px) scale(1);
-    position: absolute;
-    width: 102%;
-    margin-top: 33%;
-}
-
-a {
-    font-size: .1vw;
-}
-
-.parallax__cover {
-    background: #000000;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 93vw;  /* what pushes down the top banner */
-    margin-top: 20%;
-
-}
-
-.lighthouse {
-    margin: 0 auto;
-    width: 250px;
-    position: relative;
-    display: block;
-}
-
-.lighthouse .lightAnimation {
-    position: absolute;
-    top: -5vw; /* move lighthouse up or down */
-      /* move lightout right or left */
-    height: 5px;
-    border-radius: 100%;
-  -webkit-animation: glow 3s ease infinite;
-          animation: glow 3s ease infinite;
-}
-
-
-@keyframes glow {
-	0% {left: 119px; width: 0px; background-color: #fff;}
-	16.5% { background-color: #fff; box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);}
-	33.3% {left: 113px; width: 3px; background-color: #ffffe0; box-shadow: 0px 0px 15px 20px rgba(255, 255, 204, 1);}
-	50% { box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);}
-	66.6% {left: 109px; width: 0px; background-color: #fff;}
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* parallax intro paragraph *******************************************************/
-
-
-
-.introductionDivFrame {
-    position: relative;
-    top: 10vw;
-    margin-left: 20%; /* move the frame */ 
-}
-
-.card-body-locations {
-    margin-top: 1vw;
-}
-
-
-.frame {
-    width: 65vw;
-    height: 52vw
-}
-
-.introductionDivWords {
-    position: absolute;
-    top: 17%;
-    left: 7.5%;                   /* move words to the right */
-    background-color: transparent;
-    max-width: 65%;
-    max-height: 70%;
-}
-.introduction {
-    text-indent: 30px;
-    font-size: 1.6vw;
-    text-align: justify;
-    font-family: 'Poiret One', cursive;
-    color: #ebebeb;
-}
-
-
-
-
-/* Glowing Words *****************************************************/
-.locationsWords{
-    margin-top: -2%;            /* move glow words up */
-    font-size: 2.5vw;
-    text-align: center;
-    color: #ebebeb;
-}
-
-.card {
-    position: relative;
-    display: grid;
-    place-items: center;
-    background-color: #18181b;
-}
-
-.card-body-locations {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    display: grid;
-    background-color: transparent;
-    font-family: monospace;
-}
-
-
-.locationWordsText {
-    font-family: 'Poiret One', cursive;
-    grid-column: 1;
-    grid-row: 1;
-   /*     width: 95%;
-    height: 30%; */
-     text-shadow: 0px 0px 6px rgba(34,148,0,100); /* makes the shadow really show */
-
-}
-
-.locationWordsText.text-glow {
-    
-    filter: blur(.1vw);
-    background-color: #3bff00;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glowingText 2s infinite alternate;
-}
-
-
-@keyframes glowingText {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* PDF Pamphlet Button ************************************/
-
-
-.main {
-    display: flex;
-    margin-top: 20%;
-    margin-left: 6%;
-    justify-content: center;
-    align-items: center;
-}
-
-.button {
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    font-size: 2em;
-    position: relative;
-    text-decoration: none;
-    padding: 0.5em;
-    box-shadow: inset 0 0 0 2px #FDFDFD;
-    text-align: center;
-    text-decoration:none;
-}
-.button__label {
-  display: block;
-  background-color: transparent;
-  color: #FDFDFD;
-  padding: 1.5em 2em;
-  transition: color 500ms ease, background-color 500ms ease;
-}
-.button:hover .button__label, .button:focus .button__label {
-    text-decoration:none;
-  color: #000;
-  background-color: rgba(200, 200, 200, 0.9);
-}
-.button__ornament {
-  position: absolute;
-}
-.button__ornament--vertical {
-  top: -0.5em;
-  bottom: -0.5em;
-  left: 0;
-  right: 0;
-}
-.button__ornament--horisontal {
-  left: -0.5em;
-  right: -0.5em;
-  top: 0;
-  bottom: 0;
-}
-.button__ornament-top-bottom, .button__ornament-left-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.button__ornament-top-bottom:before, .button__ornament-top-bottom:after, .button__ornament-left-right:before, .button__ornament-left-right:after {
-  content: "";
-  position: absolute;
-  background-color: #CBCBCB;
-  transition: transform 400ms cubic-bezier(0.54, 0.06, 0.39, 0.96);
-}
-.button__ornament-top-bottom:before, .button__ornament-top-bottom:after {
-  height: 1px;
-  left: 0;
-  right: 0;
-}
-.button__ornament-top-bottom:before {
-  top: 0;
-}
-.button__ornament-top-bottom:after {
-  bottom: 0;
-}
-.button__ornament-left-right:before, .button__ornament-left-right:after {
-  width: 1px;
-  top: 0;
-  bottom: 0;
-}
-.button__ornament-left-right:before {
-  left: 0;
-}
-.button__ornament-left-right:after {
-  right: 0;
-}
-.button:hover .button__ornament-left-right:before, .button:hover .button__ornament-left-right:after, .button:focus .button__ornament-left-right:before, .button:focus .button__ornament-left-right:after {
-  transform: scale(1, 0);
-}
-.button:hover .button__ornament-top-bottom:before, .button:hover .button__ornament-top-bottom:after, .button:focus .button__ornament-top-bottom:before, .button:focus .button__ornament-top-bottom:after {
-  transform: scale(0, 1);
-}
-
-
-
-
-
-
-
-
-
-
-/* Title Banners*******************************/
-
-.titleBanners{
-    background-color: #010101;
-    border-top: 10px solid #000000;
-    border-bottom: 10px solid #000000;
-    position: -webkit-sticky;
-}
-
-
-.titleBannerContents {
-    margin-left: 18%;
-    padding: 14%;
-}
-
-.titleBannerCity{
-    font-size: 5vw;
-    font-family: 'Homenaje', sans-serif;
-}
-
-.titleBannerCityPart{
-    font-size: 2.5vw;
-    margin-top: -30px;
-}
-
-#titleBanner1 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-    background-image: url('sectionPhotos/Minnesota4.jpg');
-
-}
-
-#titleBanner1b {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-
-}
-
-#titleBanner1c {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner1d {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner2 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-
-}
-
-#titleBanner2b {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner3 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner4 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner5 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner6 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner7 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner8 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner9 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner9b {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-#titleBanner9c {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 100%;
-}
-
-
-
-
-
-
-
-
-/* Sections backgrounds ****************************/
-
-
-#section1 {
-    background-image: url('sectionPhotos/deco8.jpg');
-    background-size: 40vw;
-    background-attachment: fixed;
-}
-
-#section2 {
-    background-image: url('sectionPhotos/deco9.jpg');
-    background-size: 35vw;
-    background-attachment: fixed;
-}
-
-#section3 {
-    background-image: url('sectionPhotos/deco10.jpg');
-    background-attachment: fixed;
-    background-size: 35vw;
-}
-
-#section4 {
-    background-image: url('sectionPhotos/deco5.jpg');
-    background-attachment: fixed;
-    background-size: 25vw;
-}
-
-#section5 {
-    background-image: url('sectionPhotos/deco4.jpg');
-    background-attachment: fixed;
-    background-size: 25vw;
-}
-
-#section6 {
-    background-image: url('sectionPhotos/deco3.jpg');
-    background-attachment: fixed;
-    background-size: 30vw;
-}
-
-#section7 {
-    background-image: url('sectionPhotos/deco8.jpg');
-    background-attachment: fixed;
-    background-size: 40vw;
-}
-
-#section8 {
-    background-image: url('sectionPhotos/deco9.jpg');
-    background-attachment: fixed;
-    background-size: 35vw;
-}
-
-#section9 {
-    background-image: url('sectionPhotos/deco10.jpg');
-    background-attachment: fixed;
-    background-size: 35vw;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Sections ***********************************************/
-
-
-.wrapper {    /* Where is the end?????????????*/
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
-  color: #fff;
-  position: relative;   
-    overflow-x:hidden;
-}
-
-.sections{
-    display: inline-block;
-    width: 100%;
-    margin-top: 115vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
-    overflow-x:hidden;
-}
-
-.grouping {
-    width: 90vw;
-    top: 50%;
-    padding-bottom: 5%;
-    margin-top: 16%;
-    margin-bottom: 14%;
-    margin-left: 18%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.map {
-    border: 2px solid black;
-    align-self: center;
-    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,1); 
-    box-shadow: -1px 1px 50px 10px rgba(0,0,0,1);
-    max-width: 40vw;
-}
-
-.wordBox {
-    border: 3px solid black;
-    align-self: center;         /* makes wordbox adjust height */
-    background-color: #212121;
-    max-height: 35vw;
-    max-width: 30vw;
-    overflow-y: auto;  
-    text-indent: 2vw;
-    text-align: justify;
-    float: right;
-    margin-left: 3vw;            /* moves maps */
-    margin-right: 12%;          /* moves word box groups from the right */
-    padding: 2%;  
-    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
-    box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
-}
-
-.step {
-    text-indent: 0px;
-/* font-weight: bold; */
-    font-size: 2.6vw;
-    margin-left: 10px;
-    
-}
-.smallDate {
-    display: inline-block;
-    font-size: 1.5vw;
-    margin-left: 4%;
-}
-
-
-
-/* "Scroll Down" Glowing Words ****************************************/
-
-
-
-.card {
-    position: relative;
-    display: grid;
-    place-items: center;
-    background-color: #18181b;
-}
-
-.card-body-scroll {
-    display: grid;
-    background-color: #212121;  
-    height: 40px;
-    margin-bottom: 10%;
-}
-
-.scrollWordsText {
-    text-indent: 2vw;
-    letter-spacing: .5vw;
-    font-size: 1.8vw;
-    font-weight: 300;
-    color: goldenrod;
-    text-shadow: 0px 0px 6px rgba(218,165,32,100); /* makes the shadow really show */
-    width: 95%;
-    height: 30%;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.scrollWordsText.text-glow {
-    font-weight: 400;
-    background-color: #daa520;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glowingText 1.5s infinite alternate;
-}
-
-
-@keyframes glowingText {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* The Final Tour Step, Above the glowing paragraph *************/ 
-.finalGrouping {
-    width: 90vw;
-    top: 50%;
-    padding-bottom: 5%;
-    margin-top: 16%;
-    margin-left: 18%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-
-
-.finalWordBox {
-    max-height: 35vw;
-    max-width: 30vw;
-    text-indent: 30px;
-    background-color: #212121;
-    overflow-y: auto;  
-    font-size: 20px;
-    text-align: justify;
-    border: 3px solid black;
-    margin-left: 5%;
-    margin-right: 10%;
-    padding: 2%;
-    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
-    box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9);
-}
-
-
-
-
-
-
-
-
-
-
-
-/* The End Glowing Box *********************/
-
-.container {
-    display: grid;
-    place-items: center;
-    height: 90vh; /* area all around the box */
-}
-
-.card {
-    position: relative;
-    background-color: #212121;
-    -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,0.9); 
-    box-shadow: -1px 1px 50px 10px rgba(0,0,0,.95);
-}
-
-.card-body {
-    z-index: 2;
-    display: grid;
-    width: 40vw;
-    height: 41vw;
-    background-color: #18181b;
-    text-indent: 30px;
-    font-family: monospace;
-    font-family: 'Special Elite', cursive;
-    text-align: justify;
-}
-
-.card-glow {
-    position: absolute;
-    top: 2;
-    left: 2;
-    width: 40vw;
-    height: 41vw;
-    background-color: #5dfa9e;
-    opacity: .4;
-    filter: blur(5vw);
-    z-index: 1;
-    animation: glowingShadow 2.3s ease infinite alternate;
-}
-
-.indent {
-    margin-top: 3%;
-}
-
-.theEndText { /* all the paragraphs and words */
-    grid-column: 1;
-    grid-row: 1;
-    font-size: 1.6vw;
-    line-height: 3.5vw;
-    padding: 7%;
-}
-
-.theEnd{ /* the literal words */
-    text-indent: 0px;
-    margin-top: 1%;
-    font-size: 2.5vw;
-    text-align: center;
-}
-
-
-.theEndText.text-glow {
-    background-color: #60ff7d;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glowingText 2.3s infinite alternate;
-}
-
-@keyframes glowingShadow {
-  from {
-    transform: scale(1.2);
-  }
-
-  to {
-    transform: scale(0.65);
-  }
-}
-
-@keyframes glowingText {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-
-
-
-
-
-
-/* Smaller Screens ********************************/
-@media screen and (max-width: 700px) {
-    
-    .frame {
-        visibility: hidden;
-        height: 105vw;
-        width: 70vw;
-}
-    
-    .introduction {
-        font-size: 2.9vw;
-        line-height: 4.5vw;
-    }
-    .introductionDivWords {
-        left: 0%;   
-        top: 10%;
-        max-width: 80%;
-        max-height: 70%;
-    }
-    .locationsWords {
-        margin-top: 10%;
-        font-size: 5vw;
-    }
-    .card-body-locations {
-        width: 120%;
-        margin-left: -8%;
-    }
-    
-    .parallax__cover {
-        height: 165vw;  /* what pushes down the top banner */
-}
-    
-    .titleBannerCityPart{
-        font-size: 3vw;
-        margin-top: -20px;
-        font-weight: 400;
-}
-    
-    .smallDate {
-        font-size: 2.5vw; 
-}
-    .step {
-        font-size: 3.5vw;
-    }
-    p {
-        font-size: 2.1vw;
-    }
-    .map {
-        max-width: 40vw;
-        max-height: 50vw;
-}
-    .wordBox {
-        max-height: 70vw;
-        max-width: 40vw;
-    }
-    
-    .finalWordBox {
-        max-height: 70vw;
-        max-width: 40vw;
-}
-    .scrollWordsText {
-        font-size: 2.5vw;
-        letter-spacing: .1vw;
-    }
-    .container {
-        margin-top: -5%;
-        margin-left: 10%;
-        margin-bottom: 5%;
-    }
-
-    .nav li.active .nav__counter__chapter {
-        font-size: 2.5vw;  /* "chapter" word size, clicked on */
-
-}
-    .contact {
-        font-size: 1.5vw;
-        font-weight: 200;
-        letter-spacing: .1vw;
-        margin-left: 20%;
-        bottom: 5vw;
-}
-    
-    @keyframes glowingShadow { /* final green glow */
-  from {
-    transform: scale(1.7);
-  }
-
-  to {
-    transform: scale(0.65);
-  }
-}
+            
+            </div>
+    </section>
     
     
-    @keyframes glow {
-
-  16.5% {
-
-    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
-  }
-  33.3% {
-    left: 113px;
-    width: 3px;
-    background-color: #51e831;
-    box-shadow: 0px 0px 15px 20px #d5ffcc;
-  }
-  50% {
-    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
-  }
-  66.6% {
-    left: 109px;
-    width: 0px;
-
-  }
-}
-    
-    /* stars ****/
-    #layers .layer {
-	height: 53vw;   /* changes the height/size of the stars */
-	width: 200vw;
-}
-    
-    .parallax {
-    height: 155vw;    /* The size/length of the Parallax window */
-
-}
-    .sections{
-    margin-top: 155vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
-}
-    
-    #title {
-    margin-top: 25vw;
-}
-    .parallax__layer__3 {  /* Lighthouse */
-    margin-left: 20%; 
-    margin-top: -88%;
-}
-
-.parallax__layer__4 { /* Water */
-        margin-top: 65%;
-
-    }
-    
-    .parallax__layer__5 { /* Pier */
-    margin-top: 44%;
-    margin-left: -9%;
-    }
-    .parallax__layer__6 { /* Grass */
-    margin-top: 50%;
-}
-    
-    .parallax__cover {
-    margin-top: 30%;
-
-}
-    
-.nav li.active .nav__title {
-    width: 4vw; /* chapter detail paragraph widths when clicked on */
-    margin-left: 3.5vw;
-    font-size: 2.5vw;
-    letter-spacing: .1vw;
-    font-weight: 500;
-}
-    
-    .nav__wrapper {
-   /*  top: 25%; */
-}
-    
-    #titleBanner1 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 120%;
-}
-    #titleBanner1b {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 101%;
-}
-    
-    #titleBanner1c {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    filter: brightness(95%);
-}
-
-    #titleBanner1d {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 130%;
-}
-    
-    #titleBanner2 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 120% 170%;
-}
-    
-    #titleBanner2b {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 120%;
-}
-    
-    #titleBanner3 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 120%;
-}
-    #titleBanner4 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-}
-    #titleBanner5 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-}
-    
-    #titleBanner6 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 120%;
-}
-    
-    #titleBanner7 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 100% 130%;
-}
-    #titleBanner8 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-}
-    
-    #titleBanner9 {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-}
-    
-    #titleBanner9b {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    background-size: 110% 105%;
-}
-    
-    #titleBanner9c {
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-}
-    
-    
-    .card-body-scroll {
-    margin-bottom: 3%;
-}
+    <!-- Section 6 ---------------------------------------------------------------->
     
     
     
-    .button {
-    margin-top: 10%; /* moves the PDF pamphet button up and down */
-  letter-spacing: 0.075em;
-  font-size: .75em;
-  box-shadow: inset 0 0 0 1px #FDFDFD;
-
-}
+      <div class = "titleBanners" id = "titleBanner6" style="background-image: url('sectionPhotos/stoneVines.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>King's Point</strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+          </div>
+      </div>
+      
+      
+    <section class="section, section6" id="section6">  
+        <div class = "row">               
+        <div class = "grouping">
+            
+                 <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+               <div class = "step">24<div class = "smallDate">Summer, 1922</div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div> 
+               <p>One Sunday afternoon, Nick goes over to Gatsby's and sees Tom arrive with a man and attractive woman.</p><p>Gatsby comes to meet the visitors, and Tom becomes surprised and curious after learning that Gatsby is acquainted with his spouse.</p><p>Soon, Gatsby invites the group to return the following weekend for a party - which everyone accepts. However, Gatsby also invites the group to dinner, which the group then collectively rejects.</p><p>As dictated in "Old Money" fashion, the group then invites Gatsby to dine with them instead, in an act of insincere politeness that is disguised as good manners. Gatsby excitedly accepts - unaware of the customs of "Old Money", which expect Gatsby to reject the offer since they rejected his.</p><p>Astonished and appalled by his acceptance of their invitation, Nick watches as the group rushes to leave before Gatsby can return to join them.</p>
+            </div>
+        </div>   
+            
+            
+       <div class = "grouping">
+           
+                <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">25<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>Tom arrives at Gatsby's party with Daisy the following Saturday.</p><p>Daisy recognizes some of the faces of the famous celebrities around her, though neither Tom nor Daisy know anyone by name, since the people are not part of the "Old Money" community.</p><p>Tom soon begins to mingle with others, leaving Daisy and Gatsby to dance together and spend half an hour alone on Nick's porch while Nick stands guard in Gatsby’s garden.</p><p>Nick, Daisy, and Gatsby later reunite with Tom for dinner, though Tom says he will dine with another group instead. Daisy then gives Tom a golden pencil for taking down addresses before he leaves, and refers to the lady Tom is speaking with as "common but pretty" after he leaves.</p><p>As everyone dines, Nick can see Daisy becoming visibly appalled by the untamed demeaner of the "New Money" people around her.</p><p>Eventually, Daisy and Tom leave to drive home, though it is clear that Daisy did not enjoy the location – West Egg - or the people who had attended the party, in comparison to the "Old Money" community she is accustomed to.</p><p>Nick stays behind and speaks with Gatsby, who insists that Daisy never loved Tom, and will leave her marriage to go with Gatsby back to Louisville to marry one another at her family’s home, the location where they met - as though it was five years ago.</p><p>Nick warns Gatsby that the dream may be too much to expect, though Gatsby is unwilling to accept that Daisy has changed or had moved on since they separated years ago.</p><p>Nick is partially appauled by Gatsby's intentions, seeing that he has turned Daisy into an idealized symbol of perfection in which he has sacrificed his entire identity for.</p>
+            </div>
+        </div> 
+        </div>
+    </section>
     
-    .main {
-margin-top: 25%;
-    margin-left: 6%;
-}
+
+
+
+    <!-- Section 7 ------------------------------------------------------------------>
+
+
+
+      
+        <div class = "titleBanners" id = "titleBanner7" style="background-image: url('sectionPhotos/PlazaHotel.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>New York City</strong></div><br>
+            <div class = "titleBannerCityPart"></div></p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+      <section class="section, section7" id="section7">  
+        <div class = "row">
+        <div class = "grouping"> 
+
+                <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+                <div class = "wordBox">
+                    <div class = "step">26<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                    <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                    </div>    
+                    <p>Suddenly, Gatsby's home stops hosting parties for weeks.</p><p>Nick eventually goes over to see if he is sick, but is sent away by the butler.</p><p>Later that day, Gatsby calls Nick's home and explains that Daisy began visiting regularly to have an affair. Every servant had been dismissed to ensure their privacy, and was replaced with people provided by Wolfsheim.</p><p>Gatsby then requests Nick to visit Daisy’s home the next day. Daisy also calls with the same invitation 30 minutes later. </p>
+            </div>
+        </div>
+            
+       <div class = "grouping"> 
+           
+                <img class = "map" title="Train Route from the Financial District in Manhattan to Sands Point, Long Island" src="Steps/FinancialtoEastEgg.jpg" alt="A map of Greater New York City showing the train route from the Financial District in Manhattan to Sands Ponts, Long Island." />
+                <div class = "wordBox">
+                    <div class = "step">27<div class = "smallDate">Summer, 1922</div></div>
+                    <p>Nick takes the noon train to Daisy’s home from work on a stifling hot day, passing the by National Biscuit Company - which is named Nabisco today - while en route.</p>
+           </div>
+        </div>  
+            
+       <div class = "grouping"> 
+
+                <img class = "map" title="The driving route from Sands Point to Midtown, Manhattan" src="Steps/DaisyStreet.jpg" alt="A map of Greater New York City showing the driving route from Sands Point, long Island to Midtown, Manhatttan." />
+                <div class = "wordBox">
+                    <div class = "step">28<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                    <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                    </div>    
+                    <p>At the Buchanan home, Daisy asks Tom to make everyone cold drinks.</p><p>When Tom leaves the room, Daisy kisses Gatsby in front of both Nick and Jordan, causing Jordan to complain about the action and call Daisy vulgar.</p><p>The Buchanan’s child, Pammy, then enters the room with her nanny, showing off her white dress to Daisy. Daisy reveals that she asked Pammy to wear the dress to meet Gatsby, and tries to introduce the child to the group. However, Pammy instead asks where her father is – Tom. Gatsby also looks at the child in shock, finally seeing evidence that Daisy had, indeed, created a life away from him. Soon, the child returns to the nanny and leaves when Tom returns with the drinks.</p><p>Tom then tours Gatsby around the home's verandas before everyone sits to eat in a dimly lit dining room while Daisy suggests going into the city.</p><p>Over the table, Tom realizes that Daisy and Gatsby are having an affair when she glamorizes Gatsby and compares him to an advertisement - revealing her attraction to what evidently seems wealthy. Tom then encourages the group to drive into the city as well.</p><p>While preparing to leave, Gatsby tells Nick that Daisy's voice sounds of money - showing that Gatsby partly sees a marriage to Daisy as proving his wealth and status within the world of "Old Money".</p><p>Everyone leaves for New York City in two separate cars. Tom drives Gatsby’s beige car, and Gatsby drives Tom’s blue car - to ensure that Daisy and Gatsby do not simply run away together, which Tom now fears.</p><p>They drive to the Valley of Ashes, where Tom stops to get gas and learns that George has also begun to notice Myrtle's affair - but doesn't know with whom. After George announces his intention to move away from Long Island with Myrtle, Tom continues through Astoria and crosses the Queensboro bridge into the city, trying to catch up to Daisy and Gatsby's car.</p><p>During this time, Nick reflects on how Tom is no different than George, except George is has become sickly from his lifestyle, while Tom is strong and healthy due to his status.</p>
+            </div>
+        </div>    
+            
+       <div class = "grouping"> 
+           
+                <img class = "map" title="50th Street movie theaters, near Times Square - Midtown, Manhattan" src="Steps/50th.jpg" alt="A map of Manhattan highlighting 50th Street in Midtown" />
+                <div class = "wordBox">
+                    <div class = "step">29<div class = "smallDate">Summer, 1922</div></div>
+                    <p>After regrouping in the city, everyone discusses seeing a movie around Fiftieth Street to enjoy to cool air. Though, Tom suggests going to the Plaza Hotel instead when Daisy rejects the idea and suggests splitting up.</p>
+            </div>
+        </div>   
+                
+       <div class = "grouping"> 
+
+                <img class = "map" title="The Plaza Hotel - Midtown, Manhattan" src="Steps/Plaza.jpg" alt="A map of Manhattan highlighting the location of the Plaza Hotel in Midtown." />
+                <div class = "wordBox">
+                    <div class = "step">30<div class = "smallDate">Summer, 1922</div></div>
+                    <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                    </div> 
+                    <p>At 4 PM, the two cars travel up the south side of Central Park to the Plaza Hotel, where they book a parlor suite. Daisy first suggests booking five bathrooms for individual cold baths, but then settles on booking one room and making mint juleps for everyone - even though she does not drink alcohol, and neither does Gatsby.</p><p> Once in the room, a major confrontation occurs, with Tom questioning Gatsby's class and status due to his mysterious past and clear involvement in criminal activity - which includes bootlegging prescription alcohol, rigged gambling, and a more sinister scheme that is not described in detail.</p><p>During the conversation, Gatsby also becomes shocked when Daisy admits that she had, in fact, fallen in love with her husband, Tom, and that her life was not dictated by the single month they had shared together in Louisville - which had become so central to Gatsby's life.</p><p>The conversation ends with Daisy wanting to end her affair with Gatsby, who is clearly not the respectable businessman that she had thought he was, but is instead a dangerous gangster.</p>
+            </div>
+         </div>  
+            
+       <div class = "grouping"> 
+
+                <img class = "map" title="Driving route from Midtown, Manhattan to Flushing Meadows Corona Park" src="Steps/DriveNYCtoValley.jpg" alt="A map of Greater New York City highlighting the driving route from Midtown, Manhattan to Flushing Meadows Corona Park." />
+                <div class = "wordBox">
+                    <div class = "step">31<div class = "smallDate">Summer, 1922</div></div>
+                    <p>At 7 PM, everyone begins to drive back to Long Island.</p><p>Gatsby and Daisy return in Gatsby's car, while Tom drives his own car with Nick and Jordan. Tom is no longer worried about Daisy running away with Gatsby.</p>
+            </div>
+        </div>   
+            
+       <div class = "grouping"> 
+
+                <img class = "map" title="TODAY: Flushing Meadows Corona Park. 1922 - The Corona Dumps" src="Steps/Garage.jpg" alt="A map that highlights Flushing Meadows Corona Park in Queens, New York." />
+                <div class = "wordBox">
+                    <div class = "step">32<div class = "smallDate">Summer, 1922</div></div>
+                    <p>On the way back, Tom stops at the garage in the Valley of the Ashes after seeing a gathering crowd.</p><p>Inside the garage, he learns that Myrtle was killed after being hit by Gatsby’s car, which then sped away without stopping.</p>
+            </div>
+        </div>   
+             
+        <div class = "grouping"> 
+
+                <img class = "map" title="Sands Point - Long Island, New York" src="Steps/DaisyStreet.jpg" alt="A map of Sands Point, Long Island." />
+                <div class = "wordBox">
+                    <div class = "step">33<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                    <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                    </div>    
+<p>After arriving at the Buchanan home at 9:30 PM, Tom calls for a taxi to take Nick home.</p><p>Nick walks towards the gate to wait for the taxi when he sees Gatsby hiding in the bushes.</p><p>Nick learns that Daisy was driving the car when Myrtle was killed, and Gatsby is now waiting for Daisy to flicker the lights inside to signal if she is in trouble with Tom.</p><p>Just as Daisy's "Old Money" husband hides behind fake manners, Daisy is now hiding behind Gatsby. It is also clear that Gatsby has little care for Myrtle's death, and only cares about winning Daisy's heart.</p><p>Nick tries to tell Gatsby that his worries are unfounded, though Gatsby doesn't listen.</p><p>In an effort to allay Gatsby’s worries about Tom, Nick goes and peers through a window to see Daisy and Tom calmly talking. It is even evident that they are scheming together. Nick does not hear their conversation, however Daisy is obviously in no distress.</p>
+            </div>
+        </div>
+          
+        <div class = "grouping"> 
+            
+                <img class = "map" title="Driving route on Long Island, New York from Sands Point to King's Point" src="Steps/DriveWesttoEast.jpg" alt="a map of Long Island showing the driving route from Sands Point to King's Point." />
+                <div class = "wordBox">
+                    <div class = "step">34<div class = "smallDate">Summer, 1922</div><br></div>
+                    <p>Nick leaves by taxi to go home alone, after Gatsby insists on waiting for Daisy's signal.</p><p>Nick knows that Gatsby is wasting his time.</p>
+            </div>
+        </div>
+        </div>             
+    </section>
     
-    .button:hover .button__label, .button:focus .button__label {
-  color: #000;
-  background-color: rgba(200, 200, 200, 0.8);
-}
+
+
+
+
+    <!-- Section 8 ------------------------------------------------------------------->
+
+
+
+
+
+    <div class = "titleBanners" id = "titleBanner8" style="background-image: url('sectionPhotos/pool.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>King's Point</strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+          </div>
+    </div>
     
-    .button__label {
+      
+      
+    <section class="section, section8" id="section8">  
+        <div class = "row">
+        <div class = "grouping"> 
 
-  padding: .5em 1em;
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">35<div class = "smallDate">Summer, 1922</div></div>
+                <p>Nick has a restless night listening to the fog horn in the Long Island Sound.</p><p>When he hears a taxi arrive at Gatsby’s driveway, he gets out from bed, crosses the lawn, and enters through Gatsby's front door, which was left open.</p>
+            </div>
+        </div>
+              
+        <div class = "grouping"> 
 
-}
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">36<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>Gatsby tells Nick that he left from Daisy's at 4 AM, after Daisy went to her window, stood for a minute, and then turned off the light without giving any signal.</p><p>Nick and Gatsby go into the drawing room, open some windows, and begin to smoke while Nick tells Gatsby to go to Atlantic City or Montreal to avoid repercussions from the crime the night before. However, Gatsby says he will not leave until he knows what Daisy is going to do. Gatsby is clearly adament that he will not give up on his deam - even though it is now dead.</p></p><p>Daybreak arrives and the two open the rest of the windows before eating breakfast on the porch. Gatsby then invites Nick to swim in the pool before it is drained for the fall, however Nick declines and says he must leave for the next train to go to work.</p><p>Nick compliments Gatsby before leaving, and remembers that it was the only compliment he was able to give.</p><p>Until now, Nick has disapproved of Gatsby's life to a certain extent. Though, Nick clearly prefers Gatsby's dream to those of the "rotten crowd" that surrounds them both: Gatsby simply wants to be with Daisy.</p>
+            </div>
+        </div>   
+            
+        <div class = "grouping"> 
+            <img class = "map" title="Train route from King's Point, Long Island to the Financial District in Manhattan" src="Steps/TrainFinancialtoWestEgg.jpg" alt="A map of Greater New York City showing the train route from King's Point to the Financial District in manhattan." />
+            <div class = "wordBox">
+                <div class = "step">37<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>Nick has a bad feeling and does not want to leave for work. Though, he does a little after 9 AM, and reflects on the fact that he first entered Gatsby’s home exactly three months earlier.</p><p>Nick purposefully misses two trains before finally taking the third into the city, though he falls asleep in his chair not long after trying to work.</p><p>He wakes when Jordan calls his office at noon, explaining that she moved out from the Buchanan home and is now living in Hempstead, but is getting ready to go to Southampton.</p>
+            </div>
+        </div>   
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="The Financial District - Manhattan" src="Steps/bigFinancialDist.jpg" alt="A map Manhattan, New York with the Financial District highlighted." />
+            <div class = "wordBox">
+                <div class = "step">38<div class = "smallDate">Summer, 1922</div></div>
+                <p>Nick calls Gatsby’s home after hanging up with Jordan, but the line is busy. He tries four times; finally learning that the line is being kept open for a specific call. </p><p>Nick feels anxious about Gatsby, and looks at the train schedule to circle the next train he can make, which is at 3:50 PM.</p>
+            </div>
+        </div>   
+
+        <div class = "grouping"> 
+
+            <img class = "map" title="Train route from the Financial District in Manhattan to Flushing Meadows Corona Park" src="Steps/TrainFinancialtoValley.jpg" alt="A map of Greater New York City highlighting the train route from the Financial District in Manhattan to Flushing Meadows Corona Park." />
+            <div class = "wordBox">
+                <div class = "step">39<div class = "smallDate">Summer, 1922</div></div>
+                <p>Nick sits on the 3:50 PM train back to Long Island, purposefully on the side of the carriage that is opposite of the garage, to avoid looking at the scene of last night's crime.</p>
+            </div>
+        </div>   
+            
+        <div class = "grouping"> 
+
+             <img class = "map" title="TODAY: Flushing Meadows Corona Park. 1922 - The Corona Dumps" src="Steps/Garage.jpg" alt="A map that highlights Flushing Meadows Corona Park in Queens, New York." />
+
+            <div class = "wordBox">
+                <div class = "step">40<div class = "smallDate">Summer, 1922</div></div>
+                <p>A flashback now occurs, showing what events took place with George and Myrtle at the garage since the day before.</p>
+            </div>
+        </div> 
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+
+            <div class = "wordBox">
+                <div class = "step">41<div class = "smallDate">Summer, 1922</div></div>
+                <p>At 2pm, Gatsby puts on his bathing suit to go for a swim.</p><p>He walks to his garage for a pool float with his chauffeur, and inflates it before heading to the pool, giving orders to not remove his now-damaged car from the garage.</p>
+            </div>
+        </div> 
+            
+            
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/George.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">42<div class = "smallDate">Summer, 1922</div></div>
+                <p>At 2:30 PM, George has walked all the way to Mr. Gatsby's area, and begins inquiring people about where Gatsby lives.</p>
+            </div>
+        </div> 
+        
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/TrainStationtoGatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">43<div class = "smallDate">Summer, 1922</div></div>
+                <p>After 4pm, Nick disembarks from the train and drives to Gatsby's home.</p>
+            </div>
+        </div> 
+
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">44<div class = "smallDate">Summer, 1922</div></div>
+                <p>In the afternoon, the chauffeur hears multiple shots fired as George arrives and murders Gatsby by the marble swimming pool before turning the gun on himself. Nick arrives just after.</p><p>Nick, the chauffeur, the butler, and the gardener rush to the back of the home to find Gatsby’s body in the pool.</p><p>While working to move the body inside, they notice George's body on the lawn as well.</p>
+            </div>
+        </div>     
+        </div>
+    </section>
+
     
-.container {
-    height: 80vh; /* area all around the box */
-}
+
+      
+      <!-- Section 9 ---------------------------------------------------------------------->
+      
+
+
+
+      
+    <div class = "titleBanners" id = "titleBanner9" style="background-image: url('sectionPhotos/cemetery.jpg');">
+          <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>King's Point</strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+          </div>
+    </div>
+      
+
+
+      
+    <section class="section, section9" id="section9">  
+        <div class = "row">
+        <div class = "grouping">
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">45<div class = "smallDate">Summer, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>Nick calls for Daisy after bringing the body inside. However, he is told that everyone had already left the Buchanan home with their luggage fully packed.</p><p>Nick also tries to contact Wolfshiem, to notify him of Gatsby’s funeral. However, Wolfsheim responds that he will not attend.</p><p>For two days, the property is filled with police, journalists, and teenagers that sneak onto the grounds to observe the crime scene at the pool, though no one inquires about Gatsby personally or intimately. Nick begins to resent everyone who once came to the parties.</p><p>On the third day, a telegram signed by Henry C. Gatz arrives from Minnesota, asking for the funeral to be postponed until they arrive. The man is Gatsby’s father.</p><p> Henry Gatz arrives soon after, saying he saw the news in a Chicago newspaper. He asks to see his son - "Jimmy" - who is laid in the drawing room. Ironically and sadly, the person who cared about Gatsby most - his father - was left behind as Gatsby reinvented himself, left the Midwest, and chased after his dreams of obtaining wealth and marrying Daisy.</p><p>The funeral is scheduled for the next day at 3PM.</p>
+            </div>
+        </div>
+            
+        <div class = "grouping"> 
+
+            <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+            <div class = "wordBox">
+                <div class = "step">46<div class = "smallDate">September, 1922</div></div>
+                <p>After unsuccessfully going into the city to ask Wolfsheim to attend the funeral one final time, a minister arrives at Gatsby’s home on a rainy afternoon to begin the funeral procession.</p><p>Nick asks the minister to wait 30 minutes for other guests to arrive.</p><p>However, no one comes. </p>
+            </div>
+        </div>    
+            
+        <div class = "grouping">
+            
+
+            <img class = "map" title="The driving route on Long Island from King's Point to Lawrence Cemetery" src="Steps/ToCemetery.jpg" alt="A map of Long Island highlighting the driving route from King's Point to Lawrence Cemetery." />
+            <div class = "wordBox">
+                <div class = "step">47<div class = "smallDate">September, 1922</div></div>
+                <p>At 5pm, the funeral procession begins with Nick, Gatsby's father - Henry Gatz, and the four or five servants who remained.</p><p>The rain increases as they proceed.</p>
+            </div>
+        </div>   
+                
+        <div class = "grouping"> 
+
+            <img class = "map" title="Lawrence Cemetery - Long Island, New York." src="Steps/Cemetery.jpg" alt="A map of Long Island highlighting Lawrence Cemetery." />
+            <div class = "wordBox">
+                <div class = "step">48<div class = "smallDate">September, 1922</div></div>
+                <p>At the cemetery, the one party guest that Jordan and Nick had met weeks earlier (Chapter 3) arrives in his own car.</p><p>The visitor voices pity for Gatsby after quickly realizing that he is the only other person to attend the funeral procession. However, the visitor is clearly a 'spectator, and is only admiring the scene as he was admiring the books within the library before.</p>
+            </div>
+         </div>  
+            
+       <div class = "grouping"> 
+
+            <img class = "map" title="5th Avenue - Manhattan, NY" src="Steps/FifthAve.jpg" alt="A map of Manhattan with Fifth Avenue highlighted." />
+            <div class = "wordBox">
+                <div class = "step">49<div class = "smallDate">September, 1922</div><div class = boxRight></div></div>
+                <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+                </div>    
+                <p>After the funeral, Nick is haunted by Long Island and decides to leave New York to return to Missouri.</p><p>Before leaving, he meets with Jordan to discuss the end of their relationship, and also happens to run into Tom on 5th Avenue on a separate day.</p><p>Nick confronts Tom after he is taken aback by Tom's surprisingly relaxed demeanor. During the confrontation, Nick learns that Tom had encouraged George to find and attack Gatsby, after convincing him that Myrtle and Gatsby were having an affair together. Tom believed his actions to encourage the attack were justified, leaving Nick furious with both Tom and Daisy.</p>
+            </div>
+        </div>     
+        </div>   <!-- row -->
+    </section> 
+            
+            
+            
+    <div class = "titleBanners" id = "titleBanner9b" style="background-image: url('sectionPhotos/Minnesota2.jpg');">
+        <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>The Midwest</strong></div><br>
+            <div class = "titleBannerCityPart">Saint Paul, Minnesota</div></p>
+        </div>
+    </div>
+          
+          
+          <section class="section, section9" id="section9">  
+        <div class = "row">
+        <div class = "grouping">    
+
+            <img class = "map" title="Train route from New York City to Saint Paul, Minnesota" src="Steps/SaintPtoNYC.jpg" alt="A map of the USA highlighting the train route from New York City to Chicago, and then Saint Paul Minnesota." />
+            <div class = "wordBox">
+                <div class = "step">50<div class = "smallDate">Winter, 1922</div></div>
+                <p>Nick returns to Missouri by train and feels at home.</p><p>He passes by the yellow cars of Chicago, Union Station, Milwaukee, and heads to the Saint Paul by passing through small Wisconsin stations that are described as looking cheerful in the wintery environment.</p><p>While on the train, Nick reflects on the fact that he, Jordan, Daisy, Tom, and Gatsby were all Midwesterners, who likely did not fit in at the East Coast.</p>
+            </div>
+        </div>  
+        </div>   <!-- row -->
+    </section>    
+                        
+    <div class = "titleBanners" id = "titleBanner9c" style="background-image: url('sectionPhotos/foggyPier.jpg');">
+        <div class = titleBannerContents>
+            <p><div class = "titleBannerCity"><strong>King's Point</strong></div><br>
+            <div class = "titleBannerCityPart">Name in book: West Egg</div></p>
+        </div>
+    </div>
+              
+    <section class="section, section9" id="section9">  
+        <div class = "row">
+    <div class = "finalGrouping">     
+
+        <img class = "map" title="King's Point - Long Island, New York" src="Steps/GatsbyStreet.jpg" alt="A map of King's Point, Long Island." />
+        <div class = "finalWordBox">
+            <div class = "step">51<div class = "smallDate">Fall, 1922</div><div class = boxRight></div></div>
+            <div class="card-body-scroll">
+                <div class="scrollWordsText"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>     
+                <div class="scrollWordsText text-glow"><p><div class = "scrollWords">SCROLL DOWN</div></p></div>
+            </div>    
+            <p>As the book ends, Nick reflects on his final night living at the rental home on Long Island.</p><p>His luggage was packed, his car was sold, and he went to Gatsby’s home one last time.</p><p>The grass was overgrown as he walked up to the front stairs and he cleared away some graffiti that had been scratched into the stairs. He then walked around to the now-vacant private beach, clearly imagining the music and voices from the parties that had just been regularly occurring every weekend during the summer.</p><p>He lays on the sand, looks across the bay, and sees the green light shining from what used to be Daisy’s dock. He reflects on what Gatsby’s reaction to it had been to it.</p>
+        </div>
+    </div>  
+            
+
+
+ <!-- Final Glow ---------------------------------------------------------------------->
+
+
+
+        <div class="container">
+      
+        <div class="card">
+        <div class="card-body">
+            <div class="theEndText">“Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch out our arms farther.... And one fine morning——<br><div class = "indent">So we beat on, boats against the current, borne back ceaselessly into the past."</div><div class = "theEnd">"THE END.”</div></div>
+        
+            <div class="theEndText text-glow">“Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter — tomorrow we will run faster, stretch out our arms farther.... And one fine morning——<br><div class = "indent">So we beat on, boats against the current, borne back ceaselessly into the past."</div><div class = "theEnd">"THE END.”</div></div>
+        </div>
+
+    <div class="card-glow"></div>
+
+        </div>
+        </div>
+        </div>   <!-- row -->
+    </section>
     
-    .card-body {
-    width: 60vw;
-    height: 96vw;
-}
-
-.card-glow {
-    width: 60vw;
-    height: 76vw;
-}
-
-.theEndText { /* all the paragraphs and words */
-    font-size: 3.5vw;
-    line-height: 6vw;
-    padding: 7%;
-}
-
-.theEnd{ /* the literal words */
-    margin-top: 8%;
-    font-size: 5.5vw;
-}
-
     
-}
+    </div> <!-- sections -->
+    </div> <!-- sectionDiv -->
+    </div> <!-- wrapper -->
 
 
+<!-- Navigation -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!-- Navigation -->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
 
+</body>
+</html>
