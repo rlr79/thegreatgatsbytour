@@ -277,7 +277,7 @@ p{ /* The words and spacing between groups of text */
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
-    height: 115vw;    /* The size/length of the Parallax window */
+    height: 115vw;    /* The size/length of the Parallax window ITSELF */
     overflow-x:hidden;
     overflow-y: auto; 
     position: absolute;
@@ -842,7 +842,7 @@ margin-top: 20%;
 .sections{
     display: inline-block;
     width: 100%;
-    margin-top: 115vw;
+    margin-top: 115vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
     overflow-x:hidden;
 }
 
@@ -1217,6 +1217,9 @@ margin-top: 20%;
     .parallax {
     height: 155vw;    /* The size/length of the Parallax window */
 
+}
+    .sections{
+    margin-top: 155vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
 }
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 16%; 
