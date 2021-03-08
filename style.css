@@ -1361,22 +1361,22 @@ margin-top: 25%;
     
     .card-body {
     width: 60vw;
-    height: 86vw;
+    height: 96vw;
 }
 
 .card-glow {
     width: 60vw;
-    height: 66vw;
+    height: 76vw;
 }
 
 .theEndText { /* all the paragraphs and words */
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 6vw;
     padding: 7%;
 }
 
 .theEnd{ /* the literal words */
-    margin-top: 7%;
+    margin-top: 8%;
     font-size: 5.5vw;
 }
 
