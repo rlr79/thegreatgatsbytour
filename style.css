@@ -1355,7 +1355,9 @@ margin-top: 25%;
 
 }
     
-    
+.container {
+    height: 80vh; /* area all around the box */
+}
     
     .card-body {
     width: 50vw;
