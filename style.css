@@ -1214,15 +1214,17 @@ a {
 }
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 16%; 
-    margin-top: -87%;
+    margin-top: -88%;
 }
 
 .parallax__layer__4 { /* Water */
-        margin-top: 64%;
+        margin-top: 65%;
+
     }
     
     .parallax__layer__5 { /* Pier */
-       margin-top: 39%;
+    margin-top: 39%;
+    margin-left: -10%;
     }
     .parallax__layer__6 { /* Grass */
     margin-top: 45%;
