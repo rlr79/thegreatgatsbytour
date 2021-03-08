@@ -1023,8 +1023,8 @@ margin-top: 20%;
 .card-body {
     z-index: 2;
     display: grid;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 41vw;
     background-color: #18181b;
     text-indent: 30px;
     font-family: monospace;
@@ -1036,8 +1036,8 @@ margin-top: 20%;
     position: absolute;
     top: 2;
     left: 2;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 41vw;
     background-color: #5dfa9e;
     opacity: .4;
     filter: blur(5vw);
@@ -1052,15 +1052,15 @@ margin-top: 20%;
 .theEndText { /* all the paragraphs and words */
     grid-column: 1;
     grid-row: 1;
-    font-size: 2.25vw;
+    font-size: 1.6vw;
     line-height: 3.5vw;
     padding: 7%;
 }
 
 .theEnd{ /* the literal words */
     text-indent: 0px;
-    margin-top: 7%;
-    font-size: 4vw;
+    margin-top: 1%;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -1353,6 +1353,29 @@ margin-top: 25%;
 
   padding: .5em 1em;
 
+}
+    
+    
+    
+    .card-body {
+    width: 50vw;
+    height: 65vw;
+}
+
+.card-glow {
+    width: 50vw;
+    height: 55vw;
+}
+
+.theEndText { /* all the paragraphs and words */
+    font-size: 3vw;
+    line-height: 4vw;
+    padding: 7%;
+}
+
+.theEnd{ /* the literal words */
+    margin-top: 3%;
+    font-size: 4.5vw;
 }
 
     
