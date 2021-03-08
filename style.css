@@ -382,16 +382,17 @@ a {
     display: block;
 }
 
+
 .lighthouse .lightAnimation {
     position: absolute;
     top: -5vw; /* move lighthouse up or down */
       /* move lightout right or left */
     height: 5px;
     border-radius: 100%;
-    border-width: 0px;
   -webkit-animation: glow 3s ease infinite;
           animation: glow 3s ease infinite;
 }
+
 
 @keyframes glow {
 
