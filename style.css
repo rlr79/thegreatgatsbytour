@@ -1199,6 +1199,11 @@ a {
   }
 }
     
+    /* stars ****/
+    #layers .layer {
+	height: 53vw;   /* changes the height/size of the stars */
+	width: 200vw;
+}
     
     .parallax {
     height: 155vw;    /* The size/length of the Parallax window */
