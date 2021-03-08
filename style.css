@@ -538,7 +538,7 @@ a {
 
 .main {
   display: flex;
-margin-top: 20%;
+    margin-top: 20%;
     margin-left: 6%;
   justify-content: center;
   align-items: center;
@@ -1220,6 +1220,10 @@ margin-top: 20%;
 }
     .sections{
     margin-top: 155vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
+}
+    
+    #title {
+    margin-top: 25vw;
 }
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 16%; 
