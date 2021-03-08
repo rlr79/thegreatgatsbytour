@@ -382,25 +382,24 @@ a {
     display: block;
 }
 
-/*
 .lighthouse .lightAnimation {
     position: absolute;
     top: -5vw; /* move lighthouse up or down */
       /* move lightout right or left */
-/*    height: 5px;
+    height: 5px;
     border-radius: 100%;
   -webkit-animation: glow 3s ease infinite;
           animation: glow 3s ease infinite;
 }
-*/
 
+/*
 @keyframes glow {
 	0% {left: 119px; width: 0px; background-color: #fff;}
 	16.5% { background-color: #fff; box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);}
 	33.3% {left: 113px; width: 3px; background-color: #ffffe0; box-shadow: 0px 0px 15px 20px rgba(255, 255, 204, 1);}
 	50% { box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);}
 	66.6% {left: 109px; width: 0px; background-color: #fff;}
-}
+} */
 
 
 
