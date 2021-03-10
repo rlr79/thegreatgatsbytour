@@ -2101,9 +2101,6 @@ text-decoration: none;
 
 }
     
-        .parallax__cover {
-        height: 145vw;  /* what pushes down the top banner */
-}
     
     .sections{
     margin-top: 145vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
@@ -2111,6 +2108,14 @@ text-decoration: none;
     
     #title {
     margin-top: 25vw;
+}
+    
+    .fireflies {
+        margin-bottom: -25vw;
+}
+
+.firefly {
+
 }
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
@@ -2136,7 +2141,7 @@ text-decoration: none;
 }
     
     .introductionDivFrame {
-    top: -55vw;
+    top: -20vw;
     }
     
 .nav li.active .nav__title {
@@ -2240,7 +2245,7 @@ text-decoration: none;
     
     
     .button {
-    margin-top: -110%; /* moves the PDF pamphet button up and down */
+    margin-top: -40%; /* moves the PDF pamphet button up and down */
   letter-spacing: 0.075em;
   font-size: .75em;
   box-shadow: inset 0 0 0 1px #FDFDFD;
