@@ -2123,6 +2123,11 @@ text-decoration: none;
   pointer-events: none;
 }
 
+    .fireflies {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+}
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
     margin-top: -88%;
