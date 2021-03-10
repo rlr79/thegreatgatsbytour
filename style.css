@@ -2116,7 +2116,13 @@ text-decoration: none;
 
 .firefly {
 
+  width: 1vw;
+  height: 1vw;
+  margin: -0.2vw 0 0 9.8vw;
+  animation: ease 1000s alternate infinite;
+  pointer-events: none;
 }
+
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
     margin-top: -88%;
