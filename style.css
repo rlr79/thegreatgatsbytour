@@ -375,8 +375,8 @@ p{ /* The words and spacing between groups of text */
   position: fixed;
   left: 50%;
   top: 50%;
-  width: 0.4vw;
-  height: 0.4vw;
+  width: 0.6vw;
+  height: 0.6vw;
   margin: -0.2vw 0 0 9.8vw;
   animation: ease 900s alternate infinite;
   pointer-events: none;
