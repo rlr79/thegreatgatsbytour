@@ -2125,7 +2125,7 @@ text-decoration: none;
 
     .fireflies {
   position: relative;
-  height: 20vh;
+  height: 10vh;
   width: 100%;
 }
     .parallax__layer__3 {  /* Lighthouse */
@@ -2152,7 +2152,7 @@ text-decoration: none;
 }
     
     .introductionDivFrame {
-    top: 0vw;
+    top: 10vw;
     }
     
 .nav li.active .nav__title {
@@ -2256,7 +2256,7 @@ text-decoration: none;
     
     
     .button {
-    margin-top: 0%; /* moves the PDF pamphet button up and down */
+    margin-top: 20%; /* moves the PDF pamphet button up and down */
   letter-spacing: 0.075em;
   font-size: .75em;
   box-shadow: inset 0 0 0 1px #FDFDFD;
