@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    overflow-x: hidden;   /* this hides the white space on the right on cell phones */
+}
+
 
 p{ /* The words and spacing between groups of text */
     margin-top: 1vw;
