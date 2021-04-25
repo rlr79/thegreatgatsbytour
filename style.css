@@ -2044,7 +2044,7 @@ text-decoration: none;
     }
     .introductionDivWords {
         left: 0%;   
-        top: 10%;
+        top: 0%;
         max-width: 80%;
         max-height: 70%;
     }
@@ -2208,9 +2208,12 @@ text-decoration: none;
     margin-top: 25%;
 }
     
-    .introductionDivFrame {
-    top: 0vw;
-    }
+
+.glowWords{
+    font-size: 3.5vw;
+}
+
+
     
 .nav li.active .nav__title {
     width: 4vw; /* chapter detail paragraph widths when clicked on */
