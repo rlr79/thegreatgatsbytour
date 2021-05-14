@@ -1782,18 +1782,22 @@ text-decoration: none;
     padding-bottom: 5%;
     margin-top: 16%;
     margin-bottom: 14%;
-    margin-left: 18%;
+    margin-left: 16%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
 .map {
+    width: 100%;
     border: 2px solid black;
     align-self: center;
     -webkit-box-shadow: -1px 1px 50px 10px rgba(0,0,0,1); 
     box-shadow: -1px 1px 50px 10px rgba(0,0,0,1);
-    max-width: 40vw;
+    max-width: 30vw;
+    max-height: 50vw;
+    width: auto;   /* Tells the photo to not change ratio when it reaches max height/width */
+    height: auto;
 }
 
 .wordBox {
@@ -1899,9 +1903,9 @@ text-decoration: none;
 .finalGrouping {
     width: 90vw;
     top: 50%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
     margin-top: 16%;
-    margin-left: 18%;
+    margin-left: 16%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -1941,6 +1945,7 @@ text-decoration: none;
     display: grid;
     place-items: center;
     height: 90vh; /* area all around the box */
+    padding-bottom: 10%;
 }
 
 .card {
@@ -1953,8 +1958,8 @@ text-decoration: none;
 .card-body {
     z-index: 2;
     display: grid;
-    width: 40vw;
-    height: 41vw;
+    width: 35vw;
+    height: 36vw;
     background-color: #18181b;
     text-indent: 30px;
     font-family: monospace;
@@ -1966,8 +1971,8 @@ text-decoration: none;
     position: absolute;
     top: 2;
     left: 2;
-    width: 40vw;
-    height: 41vw;
+    width: 35vw;
+    height: 36vw;
     background-color: #5dfa9e;
     opacity: .4;
     filter: blur(5vw);
@@ -1983,7 +1988,7 @@ text-decoration: none;
 .theEndText { /* all the paragraphs and words */
     grid-column: 1;
     grid-row: 1;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     line-height: 3.5vw;
     padding: 7%;
 }
@@ -1991,7 +1996,7 @@ text-decoration: none;
 .theEnd{ /* the literal words */
     text-indent: 0px;
     margin-top: 1%;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -2342,6 +2347,7 @@ margin-top: 25%;
     
 .container {
     height: 80vh; /* area all around the box */
+    padding-bottom: 0%;
 }
     
     .card-body {
