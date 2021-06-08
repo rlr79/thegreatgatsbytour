@@ -273,7 +273,7 @@ p{ /* The words and spacing between groups of text */
 .parallax {
   -webkit-perspective: 100px;
           perspective: 100px;
-    height: 115vw;    /* The size/length of the Parallax window ITSELF */
+    height: 125vw;    /* The size/length of the Parallax window ITSELF */
     overflow-x:hidden;
     overflow-y: auto; 
     position: absolute;
@@ -1239,7 +1239,7 @@ a {
     display: block;
     position: absolute;
     width: 100%;
-    height: 105vw;  /* what pushes down the top banner */
+    height: 115vw;  /* what pushes down the top banner */
     margin-top: 20%;
 
 }
@@ -1560,6 +1560,33 @@ text-decoration: none;
 
 
 
+
+
+/* Lesson Plans Section*******************************/
+.lessons {
+     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40%;
+   /* border: 10px solid red; */
+    padding-bottom: 5%;
+    color: darkgrey;
+}
+.lessonsLinks {
+font-size: 1.2vw;
+    color: darkgrey;
+    color: mediumseagreen;
+}
+
+.lessonsTitle {
+    padding-top: 13%;
+    font-size: 2vw;
+}
+
+.lessonsLinks:hover {
+    text-decoration: underline;
+    color: green;
+}
 
 
 
@@ -2154,13 +2181,12 @@ text-decoration: none;
 }
     
     .parallax {
-    height: 145vw;    /* The size/length of the Parallax window */
+    height: 200vw;    /* The size/length of the Parallax window */
 
 }
     
-    
     .sections{
-    margin-top: 145vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
+    margin-top: 200vw; /* How far the Parallax Window is from where SECTIONS begin - this moves the sections up and down */
 }
     
     #title {
@@ -2216,6 +2242,27 @@ text-decoration: none;
 
 .glowWords{
     font-size: 3.5vw;
+}
+
+    
+    /* Lesson Plans Section*******************************/
+.lessons {
+     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+   /* border: 10px solid red; */
+    padding-bottom: 5%;
+    color: darkgrey;
+    background-color: black;
+}
+.lessonsLinks {
+font-size: 3vw;
+}
+
+.lessonsTitle {
+    padding-top: 13%;
+    font-size:3.5vw;
 }
 
 
