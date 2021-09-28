@@ -231,7 +231,7 @@ p{ /* The words and spacing between groups of text */
 
 #title {
     position: absolute;
-    margin-top: 20vw;
+    margin-top: 5%;
     width: 60vw;
     margin-left: 10vw;
     font-size:  1.9vw;
@@ -291,6 +291,9 @@ p{ /* The words and spacing between groups of text */
 .parallaxWiden {
     width: 100vw;
 }
+.widenMansion {
+    width: 75%;
+}
 
 .moonWiden {
     width: 10vw;
@@ -315,27 +318,28 @@ p{ /* The words and spacing between groups of text */
   -webkit-transform: translateZ(-250px) scale(3.5);
           transform: translateZ(-250px) scale(3.5);
         margin-left: 120vw;
-        margin-top: -60%;
+        margin-top: -100%;
 }
  
 .parallax__layer__2 { /* House */
-  -webkit-transform: translateZ(-200px) scale(3.1);
-          transform: translateZ(-200px) scale(3.1);
-        margin-top: 140%;
-}
+  -webkit-transform: translateZ(-200px) scale(3.0);
+          transform: translateZ(-200px) scale(3.0);
+        margin-top: 145%;
+        margin-left: 41%;
+}   
 
 .parallax__layer__3 {  /* Lighthouse */
   -webkit-transform: translateZ(-150px) scale(2.5);
           transform: translateZ(-150px) scale(2.5);
     margin-left: 8%; 
-    margin-top: -95%;
+    margin-top: -165%;
 }
 
 .parallax__layer__4 { /* Water */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
     position: absolute;
-        margin-top: 62%;
+        margin-top: 75%;
         max-width: 100%;
     margin-left: -50%; 
 
@@ -346,7 +350,7 @@ p{ /* The words and spacing between groups of text */
           transform: translateZ(-50px) scale(1.5);
     position: absolute;
         margin-left: -11%;
-        margin-top: 34%;
+        margin-top: 60%;
 }
 
 .parallax__layer__6 { /* Grass */
@@ -354,7 +358,7 @@ p{ /* The words and spacing between groups of text */
           transform: translateZ(0px) scale(1);
     position: absolute;
     width: 102%;
-    margin-top: 33%;
+    margin-top: 70%;
 }
 
 
@@ -1240,7 +1244,7 @@ a {
     position: absolute;
     width: 100%;
     height: 115vw;  /* what pushes down the top banner */
-    margin-top: 20%;
+    margin-top: 60%;
 
 }
 
