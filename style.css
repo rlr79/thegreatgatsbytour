@@ -288,24 +288,7 @@ p{ /* The words and spacing between groups of text */
 }
 
 
-.parallaxWiden {
-    width: 100vw;
-}
-.widenMansion {
-    width: 75%;
-}
 
-.moonWiden {
-    width: 10vw;
-}
-
-.widenPier {
-    width: 85vw;
-}
-
-.widenGrass {
-    width: 102vw;
-}
 
 .parallax__layer__0 {
   -webkit-transform: translateZ(-300px) scale(1);
