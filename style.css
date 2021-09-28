@@ -231,7 +231,7 @@ p{ /* The words and spacing between groups of text */
 
 #title {
     position: absolute;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 60vw;
     margin-left: 10vw;
     font-size:  1.9vw;
@@ -287,7 +287,9 @@ p{ /* The words and spacing between groups of text */
      bottom: 0;
 }
 
-
+.widenMansion {
+    width: 100vw;
+}
 
 
 .parallax__layer__0 {
@@ -305,10 +307,10 @@ p{ /* The words and spacing between groups of text */
 }
  
 .parallax__layer__2 { /* House */
-  -webkit-transform: translateZ(-200px) scale(3.0);
-          transform: translateZ(-200px) scale(3.0);
-        margin-top: 145%;
-        margin-left: 41%;
+  -webkit-transform: translateZ(-200px) scale(1.5);
+          transform: translateZ(-200px) scale(1.5);
+        margin-top: 150%;
+        margin-left: -2%;
 }   
 
 .parallax__layer__3 {  /* Lighthouse */
@@ -322,7 +324,7 @@ p{ /* The words and spacing between groups of text */
   -webkit-transform: translateZ(-100px) scale(2);
           transform: translateZ(-100px) scale(2);
     position: absolute;
-        margin-top: 75%;
+        margin-top: 80%;
         max-width: 100%;
     margin-left: -50%; 
 
@@ -332,8 +334,8 @@ p{ /* The words and spacing between groups of text */
   -webkit-transform: translateZ(-50px) scale(1.5);
           transform: translateZ(-50px) scale(1.5);
     position: absolute;
-        margin-left: -11%;
-        margin-top: 60%;
+        margin-left: -16%;
+        margin-top: 55%;
 }
 
 .parallax__layer__6 { /* Grass */
@@ -341,7 +343,7 @@ p{ /* The words and spacing between groups of text */
           transform: translateZ(0px) scale(1);
     position: absolute;
     width: 102%;
-    margin-top: 70%;
+    margin-top: 65%;
 }
 
 
