@@ -2215,26 +2215,39 @@ font-size: 1.2vw;
   height: 10vh;
   width: 100%;
 }
+    
+  
+    .parallax__layer__1 { /* Moon */
+        margin-left: 120vw;
+        margin-top: -140%;
+}
+    
+    .parallax__layer__2 { /* House */
+        margin-top: 220%;
+        margin-left: 42%;
+}   
+
+    
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
-    margin-top: -88%;
+    margin-top: -200%;
 }
 
-.parallax__layer__4 { /* Water */
-        margin-top: 65%;
+    .parallax__layer__4 { /* Water */
+        margin-top: 70%;
 
     }
     
     .parallax__layer__5 { /* Pier */
-    margin-top: 44%;
+    margin-top: 54%;
     margin-left: -9%;
     }
     .parallax__layer__6 { /* Grass */
-    margin-top: 50%;
+    margin-top: 70%;
 }
     
     .parallax__cover {
-    margin-top: 30%;
+    margin-top: 50%;
  height: 175vw;
 }
     
