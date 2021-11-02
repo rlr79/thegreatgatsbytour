@@ -206,7 +206,7 @@ p{ /* The words and spacing between groups of text */
 }
 
 #layers:before {
-	animation: 20s linear 2s shooting-star infinite;
+	animation: 30s linear 1s shooting-star infinite;
 	background-image: url('http://imgur.com/ilhrli3.png');
 	background-size: 72px 50px;
 	content: ' ';
@@ -1576,14 +1576,15 @@ text-decoration: none;
     color: darkgrey;
 }
 .lessonsLinks {
-font-size: 1.2vw;
+font-size: 2vw;
     color: darkgrey;
     color: mediumseagreen;
+    font-weight: 300;
 }
 
 .lessonsTitle {
     padding-top: 13%;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .lessonsLinks:hover {
