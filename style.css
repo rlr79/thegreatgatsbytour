@@ -1248,7 +1248,11 @@ a {
 }
 
 .lighthouse {
-
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+    display: block;
+		z-index: 100;
 }
 
 .lighthouse .lightAnimation {
