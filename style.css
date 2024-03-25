@@ -2231,6 +2231,7 @@ font-size: 2vw;
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
     margin-top: -175%;
+    z-index: 0;
 }
 
     .parallax__layer__4 { /* Water */
