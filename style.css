@@ -2225,10 +2225,8 @@ font-size: 2vw;
 }
     
     .parallax__layer__2 { /* House */
-        margin-top: 198%;
+        margin-top: 199%;
         margin-left: 42%;
-	z-index: -100 !important;
-	position: relative;
 }   
 
     
