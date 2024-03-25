@@ -2225,13 +2225,13 @@ font-size: 2vw;
     .parallax__layer__2 { /* House */
         margin-top: 220%;
         margin-left: 42%;
+	z-index: -100;
 }   
 
     
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
     margin-top: -175%;
-    z-index: 0;
 }
 
     .parallax__layer__4 { /* Water */
