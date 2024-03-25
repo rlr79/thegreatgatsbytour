@@ -1262,6 +1262,7 @@ a {
     border-radius: 100%;
   -webkit-animation: glow 3s ease infinite;
           animation: glow 3s ease infinite;
+	x-index: 100;
 }
 
 
