@@ -1252,6 +1252,7 @@ a {
     width: 250px;
     position: relative;
     display: block;
+		z-index: 100;
 }
 
 .lighthouse .lightAnimation {
@@ -1262,7 +1263,7 @@ a {
     border-radius: 100%;
   -webkit-animation: glow 3s ease infinite;
           animation: glow 3s ease infinite;
-	x-index: 100;
+	z-index: 100;
 }
 
 
