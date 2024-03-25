@@ -1255,7 +1255,7 @@ a {
 		z-index: 100;
 }
 
-.lighthouse .lightAnimation {
+.lightAnimation {
     position: absolute;
     top: -5vw; /* move lighthouse up or down */
       /* move lightout right or left */
