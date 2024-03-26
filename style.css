@@ -279,7 +279,6 @@ p{ /* The words and spacing between groups of text */
     position: absolute;
     width: 100%;
     border-bottom: 1vw solid #1a1a1a; 
-    z-index: -1000;   /* added thisssssss*/
 }
 
 .parallax__layer img {    /* Keeps everything level horizontally */
@@ -294,8 +293,6 @@ p{ /* The words and spacing between groups of text */
 
 .widenMansion {
     width: 75%;
-    z-index: -1001;
-    position: relative;
 }
 
 .moonWiden {
@@ -1255,7 +1252,6 @@ a {
     width: 250px;
     position: relative;
     display: block;
-		z-index: 100;
 }
 
 .lightAnimation {
@@ -1266,7 +1262,6 @@ a {
     border-radius: 100%;
   -webkit-animation: glow 3s ease infinite;
           animation: glow 3s ease infinite;
-	z-index: 100;
 }
 
 
@@ -2236,8 +2231,6 @@ font-size: 2vw;
     .parallax__layer__3 {  /* Lighthouse */
     margin-left: 22%; 
     margin-top: -175%;
-	    	z-index: 100 !important;
-	position: relative;
 }
 
     .parallax__layer__4 { /* Water */
