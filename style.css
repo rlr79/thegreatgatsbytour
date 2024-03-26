@@ -279,6 +279,7 @@ p{ /* The words and spacing between groups of text */
     position: absolute;
     width: 100%;
     border-bottom: 1vw solid #1a1a1a; 
+    z-index: 1;   /* added thisssssss*/
 }
 
 .parallax__layer img {    /* Keeps everything level horizontally */
@@ -293,6 +294,8 @@ p{ /* The words and spacing between groups of text */
 
 .widenMansion {
     width: 75%;
+    z-index: 2;
+    position: relative;
 }
 
 .moonWiden {
@@ -2225,7 +2228,7 @@ font-size: 2vw;
 }
     
     .parallax__layer__2 { /* House */
-        margin-top: 225%;
+        margin-top: 205%;
         margin-left: 42%;
 }   
 
